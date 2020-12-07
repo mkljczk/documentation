@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+
+
+<link rel='stylesheet' href='http://docs.joinmastodon.org/style.min.8428ac02267958b2de442b315ef56e6329acae2d40cff3fd939a3d3f8926aa03.css'>
+
+
+<script src='http://docs.joinmastodon.org/main.min.db37c27117ff8400e5e30549f6806d2bc825668b596d81316c6148417f59bc72.js' async></script>
+
+
+  <title>Moving or leaving accounts - Mastodon documentation</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://docs.joinmastodon.org/pl/user/moving/">
+
+  
+    <meta name="description" content="Take your information and do what you want with it.">
+    <meta property="og:description" content="Take your information and do what you want with it.">
+    <meta name="twitter:description" content="Take your information and do what you want with it.">
+  
+
+  <meta name="twitter:title" content="Moving or leaving accounts">
+  <meta name="twitter:site" content="@joinmastodon">
+
+  <link rel="canonical" href="http://docs.joinmastodon.org/pl/user/moving/">
+</head>
+
+<body>
+  <div class="container sidebar-layout">
+    <nav class="sidebar"><a class="brand" href="/">
+  <img class="link-logo" src="/brand.svg" alt="Mastodon" />
+</a>
+
+<ul>
+  
+  
+    <li>
+      
+        <a href="/pl/" class="">Czym jest Mastodon?</a>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Korzystanie z Mastodona</span>
+      
+
+      
+        <ul class="sub-menu">
+          
+            <li>
+              <a href="/pl/user/signup/" class="">Rejestracja konta</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/profile/" class="">Dostosowanie profilu</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/posting/" class="">Tworzenie wpisów</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/network/" class="">Using the network features</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moderating/" class="">Dealing with unwanted content</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/discoverability/" class="">Promowanie siebie i innych</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/preferences/" class="">Set your preferences</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/contacts/" class="">Więcej ustawień</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/external/" class="">Korzystanie z Mastodona zewnętrznie</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moving/" class="active">Moving or leaving accounts</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/run-your-own/" class="">Running your own server</a>
+
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Uruchamianie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Tworzenie aplikacji dla Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Współtworzenie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Zgodność ze specyfikacją</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">API REST</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Metody API</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Jednostki API</span>
+      
+
+      
+    </li>
+  
+</ul>
+</nav>
+    <main>
+  <h1>Moving or leaving accounts</h1>
+
+  
+    <p>Take your information and do what you want with it.</p>
+  
+  <aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#export">Exporting your information</a></li>
+        <li><a href="#migration">Redirecting or moving your profile</a></li>
+        <li><a href="#delete">Deleting your account</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </aside>
+  <div class="e-content">
+    <h2 id="export">Exporting your information</h2>
+<figure>
+    <img src="/assets/image%20%2835%29.png"
+         alt="The data export page in settings"/> <figcaption>
+            <p>The data export page in settings</p>
+        </figcaption>
+</figure>
+
+<p>At any time you want, you can go to Settings &gt; Export and download a CSV file for your current followed accounts, your currently created lists, your currently blocked accounts, your currently muted accounts, and your currently blocked domains. Your following, blocking, muting, and domain-blocking lists can be imported at Settings &gt; Import, where they can either be merged or overwritten.</p>
+<p>Requesting an archive of your toots and media can be done once every 7 days, and can be downloaded in ActivityPub JSON format. Mastodon currently does not support importing toots or media due to technical limitations, but your archive can be viewed by any software that understands how to parse ActivityPub documents.</p>
+<h2 id="migration">Redirecting or moving your profile</h2>
+<p>From the bottom of Settings &gt; Account, you can find options related to account redirection or migration.</p>
+<h3 id="redirect">Profile redirect</h3>
+<figure>
+    <img src="/assets/image%20%2853%29.png"
+         alt="Profile redirect form"/> <figcaption>
+            <p>Profile redirect form</p>
+        </figcaption>
+</figure>
+
+<p>Redirecting your account disables posting from that account and displays a &ldquo;profile moved&rdquo; notice indicating your new account. Anyone viewing your profile can see this notice and will know to follow you at your new account. Following redirected accounts is not possible. The redirect can be canceled at any time.</p>
+<h3 id="move">Profile move</h3>
+<figure>
+    <img src="/assets/image%20%2847%29.png"
+         alt="Profile move form"/> <figcaption>
+            <p>Profile move form</p>
+        </figcaption>
+</figure>
+
+<p>Moving your account is the same as redirecting your account, but it will also irreversibly force everyone to unfollow your current account and follow your new account, if their software supports the Move activity. Your toots will not be moved, due to technical limitations. There is also a very heavy cooldown period in which you cannot migrate again, so be very careful before using this option!</p>
+<h3 id="aliases">Account aliases</h3>
+<figure>
+    <img src="/assets/image%20%2840%29.png"
+         alt="Alias management screen"/> <figcaption>
+            <p>Alias management screen</p>
+        </figcaption>
+</figure>
+
+<p>Profile moves can only be initiated when your two accounts have been aliased. Account aliases are currently not used for anything other than profile moves, where you will need to set your old account as an alias of your new account before initiating the move. Setting aliases is harmless and reversible on its own.</p>
+<h2 id="delete">Deleting your account</h2>
+<figure>
+    <img src="/assets/image%20%2816%29.png"
+         alt="Account deletion form"/> <figcaption>
+            <p>Account deletion form</p>
+        </figcaption>
+</figure>
+
+<p>From the bottom of Settings &gt; Account, you can find the form to delete your account. Deleting your account is irreversible, and will cause both your profile and username to become forever unusable.</p>
+
+
+    <p style="color: #687590;">
+      Ostatnio aktualizowano December 4, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/moving.md' style="color: #687590;">Popraw tę stronę</a>
+
+      
+        <br />
+
+        Dostępne również w języku:
+
+        
+          <a href="http://docs.joinmastodon.org/user/moving/" style="color: #687590;" hreflang="en">English</a>
+        
+          <a href="http://docs.joinmastodon.org/zh-cn/user/moving/" style="color: #687590;" hreflang="zh-cn">简体中文</a>
+        
+          <a href="http://docs.joinmastodon.org/ja/user/moving/" style="color: #687590;" hreflang="ja">日本語</a>
+        
+      
+    </p>
+
+  </div>
+</main>
+  </div>
+
+  <footer class="footer container">
+  <div class="sponsorship">
+    <div class="container">
+      <h2>
+        Sponsorzy
+      </h2>
+
+      <div class="logo-grid">
+        <div>
+          <a href="https://www.dotcom-monitor.com/es/">
+            <img src="/assets/sponsors/dotcom-monitor-logo.png" alt="Dotcom-Monitor" />
+          </a>
+
+          <a href="https://www.loadview-testing.com/api-testing/">
+            <img src="/assets/sponsors/LoadView-logo.png" alt="LoadView" />
+          </a>
+
+          <a href="https://webhostingbuddy.com/wordpress-hosting/">
+            <img src="/assets/sponsors/web-hosting-buddy-logo.png" alt="Web Hosting Buddy" />
+          </a>
+
+          <a href="https://www.drivencoffee.com/">
+            <img src="/assets/sponsors/driven-coffee-logo.png" alt="Driven Coffee" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="legal legal--right">
+    <a href='https://joinmastodon.org'>Dołącz do Mastodona</a> · <a href='https://blog.joinmastodon.org'>Blog</a> · <a href='https://mastodon.social/@Mastodon' target='_blank'><i class='fab fa-mastodon'></i></a> · <a href='https://twitter.com/joinmastodon' rel='nofollow' target='_blank'><i class='fab fa-twitter'></i></a>
+  </p>
+
+  <p class="legal"><a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/moving.md'>Zobacz źródła</a> · <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> · <a href='https://joinmastodon.org/imprint'>Imprint</a></p>
+</footer>
+
+</body>
+
+</html>

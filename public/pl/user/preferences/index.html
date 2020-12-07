@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+
+
+<link rel='stylesheet' href='http://docs.joinmastodon.org/style.min.8428ac02267958b2de442b315ef56e6329acae2d40cff3fd939a3d3f8926aa03.css'>
+
+
+<script src='http://docs.joinmastodon.org/main.min.db37c27117ff8400e5e30549f6806d2bc825668b596d81316c6148417f59bc72.js' async></script>
+
+
+  <title>Set your preferences - Mastodon documentation</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://docs.joinmastodon.org/pl/user/preferences/">
+
+  
+    <meta name="description" content="Customize things just the way you like them.">
+    <meta property="og:description" content="Customize things just the way you like them.">
+    <meta name="twitter:description" content="Customize things just the way you like them.">
+  
+
+  <meta name="twitter:title" content="Set your preferences">
+  <meta name="twitter:site" content="@joinmastodon">
+
+  <link rel="canonical" href="http://docs.joinmastodon.org/pl/user/preferences/">
+</head>
+
+<body>
+  <div class="container sidebar-layout">
+    <nav class="sidebar"><a class="brand" href="/">
+  <img class="link-logo" src="/brand.svg" alt="Mastodon" />
+</a>
+
+<ul>
+  
+  
+    <li>
+      
+        <a href="/pl/" class="">Czym jest Mastodon?</a>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Korzystanie z Mastodona</span>
+      
+
+      
+        <ul class="sub-menu">
+          
+            <li>
+              <a href="/pl/user/signup/" class="">Rejestracja konta</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/profile/" class="">Dostosowanie profilu</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/posting/" class="">Tworzenie wpisów</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/network/" class="">Using the network features</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moderating/" class="">Dealing with unwanted content</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/discoverability/" class="">Promowanie siebie i innych</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/preferences/" class="active">Set your preferences</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/contacts/" class="">Więcej ustawień</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/external/" class="">Korzystanie z Mastodona zewnętrznie</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moving/" class="">Moving or leaving accounts</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/run-your-own/" class="">Running your own server</a>
+
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Uruchamianie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Tworzenie aplikacji dla Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Współtworzenie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Zgodność ze specyfikacją</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">API REST</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Metody API</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Jednostki API</span>
+      
+
+      
+    </li>
+  
+</ul>
+</nav>
+    <main>
+  <h1>Set your preferences</h1>
+
+  
+    <p>Customize things just the way you like them.</p>
+  
+  <aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#interface">Customizing the user interface</a></li>
+        <li><a href="#notifications">Controlling your notifications</a></li>
+        <li><a href="#misc">Miscellaneous options</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </aside>
+  <div class="e-content">
+    <h2 id="interface">Customizing the user interface</h2>
+<h3 id="theme">Choose a theme</h3>
+<p>Mastodon defaults to a dark theme, but a light or high-contrast theme can be selected.</p>
+<figure>
+    <img src="/assets/image%20%2834%29.png"
+         alt="Mastodon light theme"/> <figcaption>
+            <p>Mastodon light theme</p>
+        </figcaption>
+</figure>
+
+<h3 id="layout">Choose your layout</h3>
+<p>Mastodon defaults to a simple, one-column layout with a compose box on the left and a column switcher on the right. You can choose to enable the advanced web interface, which allows you view and pin multiple columns at the same time.</p>
+<figure>
+    <img src="/assets/image%20%2832%29.png"
+         alt="The advanced web interface"/> <figcaption>
+            <p>The advanced web interface</p>
+        </figcaption>
+</figure>
+
+<p>In either interface, updates will load automatically as new posts are available. You can enable Slow Mode to instead show a banner at the top of the column indicating the number of new items available, which will be loaded only when you click the banner.</p>
+<p>For accessibility reasons, the auto-play of animated GIFs is disabled by default. You can enable animated GIFs if you want to see animations. You can also reduce motion of animations throughout the UI.</p>
+<p>Trending hashtags can be shown or hidden below the getting started column in the advanced UI, or below the column switcher in the simple UI (only when there is enough space to display them).</p>
+<h3 id="confirm">Confirmation dialogs</h3>
+<p>You can choose to require confirmation before performing certain actions. Currently, confirmations can be set before performing the following actions:</p>
+<ul>
+<li>Unfollow</li>
+<li>Boost</li>
+<li>Delete</li>
+</ul>
+<h3 id="sensitive">Sensitive content</h3>
+<p>By default, any media marked as sensitive is hidden behind a click-through overlay. You can also choose to always show/hide media behind this overlay, regardless of whether it is marked as sensitive.</p>
+<p>Hidden and unloaded media uses a colorful gradient provided by the BlurHash algorithm, which uses the colors of the image but blurs the details. These gradients can be disabled.</p>
+<figure>
+    <img src="/assets/image%20%286%29.png"
+         alt="An example blurhash thumbnail"/> <figcaption>
+            <p>An example blurhash thumbnail</p>
+        </figcaption>
+</figure>
+
+<p>Posts with content warnings are collapsed by default, but you can choose to always expand the warnings so that the full post is displayed.</p>
+<h2 id="notifications">Controlling your notifications</h2>
+<h3 id="email">Sending emails</h3>
+<p>You can choose to receive email notifications according to the type of notification you receive within Mastodon. The following notification types are available to enable:</p>
+<ul>
+<li>Follows</li>
+<li>Follow requests</li>
+<li>Boosts</li>
+<li>Favourites</li>
+<li>Mentions</li>
+</ul>
+<p>You can also enable digest emails, which will provide you with an overview of notifications received during periods of long inactivity.</p>
+<h3 id="hide-notifications">Hiding certain notifications</h3>
+<p>You can choose to not receive notifications from people you don&rsquo;t follow, or from people who don&rsquo;t follow you. This will cause replies, favourites, boosts, and other interactions to not be shown to you.</p>
+<p>You can also choose to not receive notifications when you receive a direct message from people you don&rsquo;t follow.</p>
+<h2 id="misc">Miscellaneous options</h2>
+<p>If you opt out of search engine indexing, a <code>noindex</code> flag will be added to your public profile and status pages.</p>
+<p>You can choose to hide your network, which will make your following and follower lists private to you only.</p>
+<figure>
+    <img src="/assets/image%20%284%29.png"
+         alt="A profile that has opted to hide its network"/> <figcaption>
+            <p>A profile that has opted to hide its network</p>
+        </figcaption>
+</figure>
+
+<p>If you want to see posts that are boosted multiple times be reinserted into your feed at the top, you can disable boost grouping in timelines.</p>
+<h3 id="posting">Posting defaults</h3>
+<p>Posts default to public privacy. You can choose to default new posts as unlisted or followers-only instead. For an explanation of post privacy levels, see <a href="../posting#privacy">Posting to your Mastodon profile &gt; Publishing levels</a>.</p>
+<p>By default, the language of your posts is automatically detected, but this detection is imprecise and may not be accurate. If you primarily or exclusively post in a certain language, it is a good idea to set that language here.</p>
+<p>If you often post sensitive media, you can choose to always mark your media as sensitive.</p>
+<h3 id="languages">Filtering languages on public timelines</h3>
+<p>You can choose to only show posts in certain detected languages while browsing the public timelines. However, note that language detection can be very imprecise, so you may still see some posts in a disabled language, or miss some posts from enabled languages.</p>
+
+
+    <p style="color: #687590;">
+      Ostatnio aktualizowano December 4, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/preferences.md' style="color: #687590;">Popraw tę stronę</a>
+
+      
+        <br />
+
+        Dostępne również w języku:
+
+        
+          <a href="http://docs.joinmastodon.org/user/preferences/" style="color: #687590;" hreflang="en">English</a>
+        
+          <a href="http://docs.joinmastodon.org/zh-cn/user/preferences/" style="color: #687590;" hreflang="zh-cn">简体中文</a>
+        
+          <a href="http://docs.joinmastodon.org/ja/user/preferences/" style="color: #687590;" hreflang="ja">日本語</a>
+        
+      
+    </p>
+
+  </div>
+</main>
+  </div>
+
+  <footer class="footer container">
+  <div class="sponsorship">
+    <div class="container">
+      <h2>
+        Sponsorzy
+      </h2>
+
+      <div class="logo-grid">
+        <div>
+          <a href="https://www.dotcom-monitor.com/es/">
+            <img src="/assets/sponsors/dotcom-monitor-logo.png" alt="Dotcom-Monitor" />
+          </a>
+
+          <a href="https://www.loadview-testing.com/api-testing/">
+            <img src="/assets/sponsors/LoadView-logo.png" alt="LoadView" />
+          </a>
+
+          <a href="https://webhostingbuddy.com/wordpress-hosting/">
+            <img src="/assets/sponsors/web-hosting-buddy-logo.png" alt="Web Hosting Buddy" />
+          </a>
+
+          <a href="https://www.drivencoffee.com/">
+            <img src="/assets/sponsors/driven-coffee-logo.png" alt="Driven Coffee" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="legal legal--right">
+    <a href='https://joinmastodon.org'>Dołącz do Mastodona</a> · <a href='https://blog.joinmastodon.org'>Blog</a> · <a href='https://mastodon.social/@Mastodon' target='_blank'><i class='fab fa-mastodon'></i></a> · <a href='https://twitter.com/joinmastodon' rel='nofollow' target='_blank'><i class='fab fa-twitter'></i></a>
+  </p>
+
+  <p class="legal"><a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/preferences.md'>Zobacz źródła</a> · <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> · <a href='https://joinmastodon.org/imprint'>Imprint</a></p>
+</footer>
+
+</body>
+
+</html>

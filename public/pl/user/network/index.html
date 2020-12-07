@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+
+
+<link rel='stylesheet' href='http://docs.joinmastodon.org/style.min.8428ac02267958b2de442b315ef56e6329acae2d40cff3fd939a3d3f8926aa03.css'>
+
+
+<script src='http://docs.joinmastodon.org/main.min.db37c27117ff8400e5e30549f6806d2bc825668b596d81316c6148417f59bc72.js' async></script>
+
+
+  <title>Using the network features - Mastodon documentation</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://docs.joinmastodon.org/pl/user/network/">
+
+  
+    <meta name="description" content="Follow and talk to anyone from any server.">
+    <meta property="og:description" content="Follow and talk to anyone from any server.">
+    <meta name="twitter:description" content="Follow and talk to anyone from any server.">
+  
+
+  <meta name="twitter:title" content="Using the network features">
+  <meta name="twitter:site" content="@joinmastodon">
+
+  <link rel="canonical" href="http://docs.joinmastodon.org/pl/user/network/">
+</head>
+
+<body>
+  <div class="container sidebar-layout">
+    <nav class="sidebar"><a class="brand" href="/">
+  <img class="link-logo" src="/brand.svg" alt="Mastodon" />
+</a>
+
+<ul>
+  
+  
+    <li>
+      
+        <a href="/pl/" class="">Czym jest Mastodon?</a>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Korzystanie z Mastodona</span>
+      
+
+      
+        <ul class="sub-menu">
+          
+            <li>
+              <a href="/pl/user/signup/" class="">Rejestracja konta</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/profile/" class="">Dostosowanie profilu</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/posting/" class="">Tworzenie wpisów</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/network/" class="active">Using the network features</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moderating/" class="">Dealing with unwanted content</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/discoverability/" class="">Promowanie siebie i innych</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/preferences/" class="">Set your preferences</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/contacts/" class="">Więcej ustawień</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/external/" class="">Korzystanie z Mastodona zewnętrznie</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moving/" class="">Moving or leaving accounts</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/run-your-own/" class="">Running your own server</a>
+
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Uruchamianie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Tworzenie aplikacji dla Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Współtworzenie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Zgodność ze specyfikacją</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">API REST</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Metody API</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Jednostki API</span>
+      
+
+      
+    </li>
+  
+</ul>
+</nav>
+    <main>
+  <h1>Using the network features</h1>
+
+  
+    <p>Follow and talk to anyone from any server.</p>
+  
+  <aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#timelines">Browsing content through public timelines</a></li>
+        <li><a href="#actions">Interacting with people&rsquo;s posts</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#follow">Following profiles</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#direct">Direct conversations</a></li>
+        <li><a href="#lists">List timelines</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </aside>
+  <div class="e-content">
+    <h2 id="timelines">Browsing content through public timelines</h2>
+<figure>
+    <img src="/assets/image%20%2830%29.png"
+         alt="Posts within a public timeline"/> <figcaption>
+            <p>Posts within a public timeline</p>
+        </figcaption>
+</figure>
+
+<p>To allow you to discover potentially interesting content, Mastodon provides a way to browse all public posts. Well, there is no global shared state between all servers, so there is no way to browse <em>all</em> public posts. When you browse the <strong>federated timeline</strong>, you see all public posts that the server you are on knows about. There are various ways your server may discover posts, but the bulk of them will be from people that other users on your server follow.</p>
+<p>There is a way to filter the federated timeline to view only public posts created on your server: The <strong>local timeline</strong>. Mind that “local” here refers to the server, not to a geographical location.</p>
+<h2 id="actions">Interacting with people&rsquo;s posts</h2>
+<figure>
+    <img src="/assets/image%20%2821%29.png"
+         alt="An expanded view can be loaded by clicking a status in the timeline."/> <figcaption>
+            <p>An expanded view can be loaded by clicking a status in the timeline.</p>
+        </figcaption>
+</figure>
+
+<p>You can perform quick actions on a post directly from the timeline, or you can click on the post to load an expanded view that shows extra information, such as a full timestamp, interaction counts, and threaded replies, if any. The following actions can be performed on a post:</p>
+<ul>
+<li><strong>Reply</strong> to a post by clicking the arrow icon. Your toot will show up in the thread below the post you are replying to.</li>
+<li><strong>Boost</strong> a post by clicking the cycled-arrow icon. The post will be reshared on your profile.</li>
+<li><strong>Favourite</strong> a post by clicking the star icon. The post will be added to your favourites list, and a favourite notification will be delivered to its author.</li>
+<li><strong>Bookmark</strong> a post by clicking the ribbon icon. The post will be privately added to your bookmarks list without generating a notification.</li>
+<li>Access a <strong>menu</strong> of additional options by clicking the ellipsis icon.</li>
+</ul>
+<h2 id="notifications">Notifications</h2>
+<figure>
+    <img src="/assets/image%20%2850%29.png"
+         alt="Notifications column"/> <figcaption>
+            <p>Notifications column</p>
+        </figcaption>
+</figure>
+
+<p>When other people interact with you or your posts, you will receive a notification depending on the type of the event. Your notifications column allows you to view all notifications in the same stream, or to filter for specific types of notifications:</p>
+<ul>
+<li><strong>Mentions:</strong> received when someone has mentioned you in a post.</li>
+<li><strong>Favourites:</strong> received when someone has favourited one of your posts.</li>
+<li><strong>Boosts:</strong> received when someone has boosted one of your posts.</li>
+<li><strong>Polls:</strong> Received when a poll that you have voted in or created has ended.</li>
+<li><strong>Follows:</strong> Received when someone has followed your profile.</li>
+</ul>
+<h2 id="follow">Following profiles</h2>
+<p><img src="/assets/image%20%2811%29.png" alt=""></p>
+<p>As long as you encounter a person within your app’s user interface, e.g. the web interface on your home server, or your mobile app, you can just click “follow” and you won’t notice a difference if that person is on your server or not.</p>
+<p>However if you come across someone’s public profile hosted on a different server, there’s an obstacle: That server sees you as just another anonymous visitor. Not to worry! You can simply copy the URL of that profile, or of one of their posts, and then paste that URL into the search function.</p>
+<p>If you are visiting a public page on another Mastodon site, see <a href="../external/#interact">Using Mastodon outside of your site</a>.</p>
+<h2 id="search">Search</h2>
+<figure>
+    <img src="/assets/image%20%2819%29.png"
+         alt="The search function can be accessed from the sidebar."/> <figcaption>
+            <p>The search function can be accessed from the sidebar.</p>
+        </figcaption>
+</figure>
+
+<p>Mastodon&rsquo;s basic search allows logged-in users to find toots containing a specific hashtag, or to load a user or status directly if they know the URL or address. Searching for a term will show profiles whose username or display name contains that term, as well as hashtags that match or contain that term.</p>
+<figure>
+    <img src="/assets/image%20%2839%29.png"
+         alt="An example of a toot being loaded directly by its URL."/> <figcaption>
+            <p>An example of a toot being loaded directly by its URL.</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/image%20%2823%29.png"
+         alt="An example of accounts returned when searching for &amp;quot;cats&amp;quot;."/> <figcaption>
+            <p>An example of accounts returned when searching for &quot;cats&quot;.</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/image%20%2827%29.png"
+         alt="An example of hashtags returned when searching for &amp;quot;cats&amp;quot;."/> <figcaption>
+            <p>An example of hashtags returned when searching for &quot;cats&quot;.</p>
+        </figcaption>
+</figure>
+
+<p>Admins may optionally install full-text search. Mastodon’s full-text search allows logged-in users to find results from their own toots, their favourites, their bookmarks and their mentions. It deliberately does not allow searching for arbitrary strings in the entire database, in order to reduce the risk of abuse by people searching for controversial terms to find people to dogpile.</p>
+<p>The following operators are supported:</p>
+<ul>
+<li><strong>&ldquo;exact phrases&rdquo;</strong> will try to find the term inside the quote marks. This allows looking only for direct matches, such as <code>&quot;look at my cluckers&quot;</code> to find posts explicitly telling you to look at someone&rsquo;s cluckers.</li>
+<li><strong>-exclude</strong> will exclude the term prepended by a minus sign. This allows filtering out certain terms, such as <code>animals -cats</code> to find posts about animals without posts about cats.</li>
+<li><strong>+include</strong> will include the term after the plus sign. This allows searching for multiple terms that must be included, such as <code>cat +dog</code> to find posts about both cats and dogs.</li>
+</ul>
+<h2 id="direct">Direct conversations</h2>
+<figure>
+    <img src="/assets/image%20%2812%29.png"
+         alt="A list of conversations containing direct messages."/> <figcaption>
+            <p>A list of conversations containing direct messages.</p>
+        </figcaption>
+</figure>
+
+<p>In Mastodon, direct messages are simply toots that have the &ldquo;direct&rdquo; visibility selected. Visibility can be selected per-post, which allows changing the privacy level later in a thread. The direct messages column currently shows a list of all conversations containing a direct post. Clicking on a conversation will load the associated thread.</p>
+<figure>
+    <img src="/assets/image%20%2857%29.png"
+         alt="A direct message in a thread."/> <figcaption>
+            <p>A direct message in a thread.</p>
+        </figcaption>
+</figure>
+
+<h2 id="lists">List timelines</h2>
+<p>Lists are subsets of your home timeline. You can create a list, give it a name, and add users that you follow to that list.</p>
+<p><img src="/assets/image%20%2828%29.png" alt=""></p>
+<p>Opening a list will load that list&rsquo;s timeline. List timelines contain only posts by members of that list, as well as replies to you or to other members of the list.</p>
+<figure>
+    <img src="/assets/image%20%285%29.png"
+         alt="A list timeline"/> <figcaption>
+            <p>A list timeline</p>
+        </figcaption>
+</figure>
+
+
+
+    <p style="color: #687590;">
+      Ostatnio aktualizowano December 4, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/network.md' style="color: #687590;">Popraw tę stronę</a>
+
+      
+        <br />
+
+        Dostępne również w języku:
+
+        
+          <a href="http://docs.joinmastodon.org/user/network/" style="color: #687590;" hreflang="en">English</a>
+        
+          <a href="http://docs.joinmastodon.org/zh-cn/user/network/" style="color: #687590;" hreflang="zh-cn">简体中文</a>
+        
+          <a href="http://docs.joinmastodon.org/ja/user/network/" style="color: #687590;" hreflang="ja">日本語</a>
+        
+      
+    </p>
+
+  </div>
+</main>
+  </div>
+
+  <footer class="footer container">
+  <div class="sponsorship">
+    <div class="container">
+      <h2>
+        Sponsorzy
+      </h2>
+
+      <div class="logo-grid">
+        <div>
+          <a href="https://www.dotcom-monitor.com/es/">
+            <img src="/assets/sponsors/dotcom-monitor-logo.png" alt="Dotcom-Monitor" />
+          </a>
+
+          <a href="https://www.loadview-testing.com/api-testing/">
+            <img src="/assets/sponsors/LoadView-logo.png" alt="LoadView" />
+          </a>
+
+          <a href="https://webhostingbuddy.com/wordpress-hosting/">
+            <img src="/assets/sponsors/web-hosting-buddy-logo.png" alt="Web Hosting Buddy" />
+          </a>
+
+          <a href="https://www.drivencoffee.com/">
+            <img src="/assets/sponsors/driven-coffee-logo.png" alt="Driven Coffee" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="legal legal--right">
+    <a href='https://joinmastodon.org'>Dołącz do Mastodona</a> · <a href='https://blog.joinmastodon.org'>Blog</a> · <a href='https://mastodon.social/@Mastodon' target='_blank'><i class='fab fa-mastodon'></i></a> · <a href='https://twitter.com/joinmastodon' rel='nofollow' target='_blank'><i class='fab fa-twitter'></i></a>
+  </p>
+
+  <p class="legal"><a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/network.md'>Zobacz źródła</a> · <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> · <a href='https://joinmastodon.org/imprint'>Imprint</a></p>
+</footer>
+
+</body>
+
+</html>

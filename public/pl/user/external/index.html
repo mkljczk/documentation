@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+
+
+<link rel='stylesheet' href='http://docs.joinmastodon.org/style.min.8428ac02267958b2de442b315ef56e6329acae2d40cff3fd939a3d3f8926aa03.css'>
+
+
+<script src='http://docs.joinmastodon.org/main.min.db37c27117ff8400e5e30549f6806d2bc825668b596d81316c6148417f59bc72.js' async></script>
+
+
+  <title>Korzystanie z Mastodona zewnętrznie - Mastodon documentation</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://docs.joinmastodon.org/pl/user/external/">
+
+  
+    <meta name="description" content="Możesz korzystać i wchodzić w interakcje na Mastodonie z poziomu zewnętrznych aplikacji i stron.">
+    <meta property="og:description" content="Możesz korzystać i wchodzić w interakcje na Mastodonie z poziomu zewnętrznych aplikacji i stron.">
+    <meta name="twitter:description" content="Możesz korzystać i wchodzić w interakcje na Mastodonie z poziomu zewnętrznych aplikacji i stron.">
+  
+
+  <meta name="twitter:title" content="Korzystanie z Mastodona zewnętrznie">
+  <meta name="twitter:site" content="@joinmastodon">
+
+  <link rel="canonical" href="http://docs.joinmastodon.org/pl/user/external/">
+</head>
+
+<body>
+  <div class="container sidebar-layout">
+    <nav class="sidebar"><a class="brand" href="/">
+  <img class="link-logo" src="/brand.svg" alt="Mastodon" />
+</a>
+
+<ul>
+  
+  
+    <li>
+      
+        <a href="/pl/" class="">Czym jest Mastodon?</a>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Korzystanie z Mastodona</span>
+      
+
+      
+        <ul class="sub-menu">
+          
+            <li>
+              <a href="/pl/user/signup/" class="">Rejestracja konta</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/profile/" class="">Dostosowanie profilu</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/posting/" class="">Tworzenie wpisów</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/network/" class="">Using the network features</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moderating/" class="">Dealing with unwanted content</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/discoverability/" class="">Promowanie siebie i innych</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/preferences/" class="">Set your preferences</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/contacts/" class="">Więcej ustawień</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/external/" class="active">Korzystanie z Mastodona zewnętrznie</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moving/" class="">Moving or leaving accounts</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/run-your-own/" class="">Running your own server</a>
+
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Uruchamianie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Tworzenie aplikacji dla Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Współtworzenie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Zgodność ze specyfikacją</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">API REST</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Metody API</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Jednostki API</span>
+      
+
+      
+    </li>
+  
+</ul>
+</nav>
+    <main>
+  <h1>Korzystanie z Mastodona zewnętrznie</h1>
+
+  
+    <p>Możesz korzystać i wchodzić w interakcje na Mastodonie z poziomu zewnętrznych aplikacji i stron.</p>
+  
+  <aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#interact">Zdalne interakcje z innym serwerem Mastodona</a></li>
+        <li><a href="#apps">Logowanie się w aplikacji Mastodona</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </aside>
+  <div class="e-content">
+    <h2 id="interact">Zdalne interakcje z innym serwerem Mastodona</h2>
+<figure>
+    <img src="/assets/image%20%2863%29.png"
+         alt="Przykład odnośnika bezpośredniego do wpisu na serwerze Mastodona"/> <figcaption>
+            <p>Przykład odnośnika bezpośredniego do wpisu na serwerze Mastodona</p>
+        </figcaption>
+</figure>
+
+<p>Kiedy odwiedzasz zdalny serwer oparty o Mastodona, kliknięcie dowolnego z przycisków interakcji przeniesie Cię do okna dialogowego, które przekieruje Cię na Twój lokalny serwer.</p>
+<figure>
+    <img src="/assets/image%20%288%29.png"
+         alt="Ekran zdalnej interakcji przy odpowiadaniu na wpis"/> <figcaption>
+            <p>Ekran zdalnej interakcji przy odpowiadaniu na wpis</p>
+        </figcaption>
+</figure>
+
+<h2 id="apps">Logowanie się w aplikacji Mastodona</h2>
+<p>Możesz użyć swojego konta na Mastodonie aby zalogować się w dowolnej aplikacji obsługującej API Mastodona. Listę takich aplikacji znajdziesz na <a href="https://joinmastodon.org/apps">https://joinmastodon.org/apps</a>.</p>
+
+
+    <p style="color: #687590;">
+      Ostatnio aktualizowano December 6, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/external.md' style="color: #687590;">Popraw tę stronę</a>
+
+      
+        <br />
+
+        Dostępne również w języku:
+
+        
+          <a href="http://docs.joinmastodon.org/user/external/" style="color: #687590;" hreflang="en">English</a>
+        
+          <a href="http://docs.joinmastodon.org/zh-cn/user/external/" style="color: #687590;" hreflang="zh-cn">简体中文</a>
+        
+          <a href="http://docs.joinmastodon.org/ja/user/external/" style="color: #687590;" hreflang="ja">日本語</a>
+        
+      
+    </p>
+
+  </div>
+</main>
+  </div>
+
+  <footer class="footer container">
+  <div class="sponsorship">
+    <div class="container">
+      <h2>
+        Sponsorzy
+      </h2>
+
+      <div class="logo-grid">
+        <div>
+          <a href="https://www.dotcom-monitor.com/es/">
+            <img src="/assets/sponsors/dotcom-monitor-logo.png" alt="Dotcom-Monitor" />
+          </a>
+
+          <a href="https://www.loadview-testing.com/api-testing/">
+            <img src="/assets/sponsors/LoadView-logo.png" alt="LoadView" />
+          </a>
+
+          <a href="https://webhostingbuddy.com/wordpress-hosting/">
+            <img src="/assets/sponsors/web-hosting-buddy-logo.png" alt="Web Hosting Buddy" />
+          </a>
+
+          <a href="https://www.drivencoffee.com/">
+            <img src="/assets/sponsors/driven-coffee-logo.png" alt="Driven Coffee" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="legal legal--right">
+    <a href='https://joinmastodon.org'>Dołącz do Mastodona</a> · <a href='https://blog.joinmastodon.org'>Blog</a> · <a href='https://mastodon.social/@Mastodon' target='_blank'><i class='fab fa-mastodon'></i></a> · <a href='https://twitter.com/joinmastodon' rel='nofollow' target='_blank'><i class='fab fa-twitter'></i></a>
+  </p>
+
+  <p class="legal"><a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/external.md'>Zobacz źródła</a> · <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> · <a href='https://joinmastodon.org/imprint'>Imprint</a></p>
+</footer>
+
+</body>
+
+</html>

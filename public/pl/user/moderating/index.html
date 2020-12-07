@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+
+
+<link rel='stylesheet' href='http://docs.joinmastodon.org/style.min.8428ac02267958b2de442b315ef56e6329acae2d40cff3fd939a3d3f8926aa03.css'>
+
+
+<script src='http://docs.joinmastodon.org/main.min.db37c27117ff8400e5e30549f6806d2bc825668b596d81316c6148417f59bc72.js' async></script>
+
+
+  <title>Dealing with unwanted content - Mastodon documentation</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://docs.joinmastodon.org/pl/user/moderating/">
+
+  
+    <meta name="description" content="Control what you see, for a more comfortable social media experience.">
+    <meta property="og:description" content="Control what you see, for a more comfortable social media experience.">
+    <meta name="twitter:description" content="Control what you see, for a more comfortable social media experience.">
+  
+
+  <meta name="twitter:title" content="Dealing with unwanted content">
+  <meta name="twitter:site" content="@joinmastodon">
+
+  <link rel="canonical" href="http://docs.joinmastodon.org/pl/user/moderating/">
+</head>
+
+<body>
+  <div class="container sidebar-layout">
+    <nav class="sidebar"><a class="brand" href="/">
+  <img class="link-logo" src="/brand.svg" alt="Mastodon" />
+</a>
+
+<ul>
+  
+  
+    <li>
+      
+        <a href="/pl/" class="">Czym jest Mastodon?</a>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Korzystanie z Mastodona</span>
+      
+
+      
+        <ul class="sub-menu">
+          
+            <li>
+              <a href="/pl/user/signup/" class="">Rejestracja konta</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/profile/" class="">Dostosowanie profilu</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/posting/" class="">Tworzenie wpisów</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/network/" class="">Using the network features</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moderating/" class="active">Dealing with unwanted content</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/discoverability/" class="">Promowanie siebie i innych</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/preferences/" class="">Set your preferences</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/contacts/" class="">Więcej ustawień</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/external/" class="">Korzystanie z Mastodona zewnętrznie</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/moving/" class="">Moving or leaving accounts</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/pl/user/run-your-own/" class="">Running your own server</a>
+
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Uruchamianie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Tworzenie aplikacji dla Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Współtworzenie Mastodona</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Zgodność ze specyfikacją</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">API REST</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Metody API</span>
+      
+
+      
+    </li>
+  
+    <li>
+      
+        <span class="sub-title">Jednostki API</span>
+      
+
+      
+    </li>
+  
+</ul>
+</nav>
+    <main>
+  <h1>Dealing with unwanted content</h1>
+
+  
+    <p>Control what you see, for a more comfortable social media experience.</p>
+  
+  <aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#filters">Filtering posts</a></li>
+        <li><a href="#blocking-and-muting">User-level actions</a></li>
+        <li><a href="#report">Reporting problematic content to moderators</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </aside>
+  <div class="e-content">
+    <h2 id="filters">Filtering posts</h2>
+<p>It is possible to filter statuses for specific keywords and phrases so that they can be hidden automatically.</p>
+<figure>
+    <img src="/assets/image%20%2848%29.png"
+         alt="A sample of active filters for various keywords in different contexts."/> <figcaption>
+            <p>A sample of active filters for various keywords in different contexts.</p>
+        </figcaption>
+</figure>
+
+<p>To create or manage your filters, go to Settings &gt; Filters. The &ldquo;Add new filter&rdquo; button will let you create a new filter, and existing filters can be edited or deleted. Your existing filters will be summarized in a table.</p>
+<figure>
+    <img src="/assets/image%20%2814%29.png"
+         alt="Filters can have an expiry date, specific contexts, server-side drop, and use word boundaries."/> <figcaption>
+            <p>Filters can have an expiry date, specific contexts, server-side drop, and use word boundaries.</p>
+        </figcaption>
+</figure>
+
+<p>Filters have the following settings:</p>
+<h3 id="filter-phrase">Keyword or phrase</h3>
+<p>This is the string that will be matched. The keyword will be searched for in any status&rsquo;s content, including CW, media descriptions, and poll options.</p>
+<h3 id="filter-expire">Expire after</h3>
+<p>Optionally only apply the filter for a limited amount of time. Expired filters are not automatically deleted, but can be reactivated by setting a new expiry date (or changing it back to &ldquo;never&rdquo; expire).</p>
+<h3 id="filter-context">Filter contexts</h3>
+<p>Choose where the filter will be applied:</p>
+<ul>
+<li>Home timeline and lists = matching statuses will be removed from your home feed and lists</li>
+<li>Notifications = matching notifications will not be shown</li>
+<li>Public timelines = matching statuses will not appear in local/federated timelines</li>
+<li>Conversations = matching statuses will be hidden in threads and detailed views</li>
+</ul>
+<h3 id="filter-drop">Drop instead of hide</h3>
+<p>Filtering is usually done client-side, so that disabling a filter will cause filtered statuses to be visible again. However, if you enable &ldquo;drop instead of hide&rdquo;, any matching statuses will be disappear completely and will never be delivered to your home or notifications.</p>
+<h3 id="filter-whole">Whole word</h3>
+<p>Filters normally apply to any status that contains the included characters, regardless of whether they are in the middle of a word. Enabling &ldquo;whole word&rdquo; will only apply the filter if the keyword is surrounded by spaces or other non-alphanumeric characters.</p>
+<h2 id="blocking-and-muting">User-level actions</h2>
+<figure>
+    <img src="/assets/image%20%2824%29.png"
+         alt="The user dropdown menu offers various actions."/> <figcaption>
+            <p>The user dropdown menu offers various actions.</p>
+        </figcaption>
+</figure>
+
+<h3 id="hide-boosts">Hiding boosts</h3>
+<p>If you hide boosts from someone, you won’t see their boosts in your home feed. This option only appears on users who you are currently following.</p>
+<h3 id="mute">Muting</h3>
+<figure>
+    <img src="/assets/image%20%2852%29.png"
+         alt="Sample of muted accounts."/> <figcaption>
+            <p>Sample of muted accounts.</p>
+        </figcaption>
+</figure>
+
+<p>When muting, you have the option to mute notifications from them or not. Muting without muting notifications hides the user from your view:</p>
+<ul>
+<li>You won’t see the user in your home feed</li>
+<li>You won’t see other people boosting the user</li>
+<li>You won’t see other people mentioning the user</li>
+<li>You won’t see the user in public timelines</li>
+</ul>
+<p>If you choose to also mute notifications from them, you will additionally not see notifications from that user.</p>
+<p>The user has no way of knowing they have been muted.</p>
+<h3 id="block">Blocking</h3>
+<figure>
+    <img src="/assets/image%20%2836%29.png"
+         alt="Sample of blocked accounts."/> <figcaption>
+            <p>Sample of blocked accounts.</p>
+        </figcaption>
+</figure>
+
+<p>Blocking hides a user from your view:</p>
+<ul>
+<li>You won’t see the user in your home feed</li>
+<li>You won’t see other people boosting the user</li>
+<li>You won’t see other people mentioning the user</li>
+<li>You won’t see the user in public timelines</li>
+<li>You won’t see notifications from that user</li>
+</ul>
+<p>Additionally, on the blocked user’s side:</p>
+<ul>
+<li>The user is forced to unfollow you</li>
+<li>The user cannot follow you</li>
+<li>The user won’t see other people’s boosts of you</li>
+<li>The user won’t see you in public timelines</li>
+</ul>
+<p>If you and the blocked user are on the same server, the blocked user will not be able to view your posts on your profile while logged in.</p>
+<h3 id="hide-domain">Hiding an entire server</h3>
+<p><img src="/assets/image%20%2861%29.png" alt=""></p>
+<p>If you hide an entire server:</p>
+<ul>
+<li>You will not see posts from that server on the public timelines</li>
+<li>You won’t see other people’s boosts of that server in your home feed</li>
+<li>You won’t see notifications from that server</li>
+<li>You will lose any followers that you might have had on that server</li>
+</ul>
+<h2 id="report">Reporting problematic content to moderators</h2>
+<figure>
+    <img src="/assets/image%20%283%29.png"
+         alt="The report modal allows selecting example statuses, adding a note, and forwarding reports."/> <figcaption>
+            <p>The report modal allows selecting example statuses, adding a note, and forwarding reports.</p>
+        </figcaption>
+</figure>
+
+<p>If you see a status or user that is violating the rules of your website, you can report that user to your site&rsquo;s moderators. Clicking the &ldquo;report&rdquo; option on the user dropdown or status dropdown will open the report modal. Here, you can (and should) add a note about why you are reporting this account. You can attach certain problematic statuses for additional context on why you are reporting the account, and if their conduct is violating the rules of the remote website, you can also choose to forward the report to their site&rsquo;s moderators.</p>
+
+
+    <p style="color: #687590;">
+      Ostatnio aktualizowano December 4, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/moderating.md' style="color: #687590;">Popraw tę stronę</a>
+
+      
+        <br />
+
+        Dostępne również w języku:
+
+        
+          <a href="http://docs.joinmastodon.org/user/moderating/" style="color: #687590;" hreflang="en">English</a>
+        
+          <a href="http://docs.joinmastodon.org/zh-cn/user/moderating/" style="color: #687590;" hreflang="zh-cn">简体中文</a>
+        
+          <a href="http://docs.joinmastodon.org/ja/user/moderating/" style="color: #687590;" hreflang="ja">日本語</a>
+        
+      
+    </p>
+
+  </div>
+</main>
+  </div>
+
+  <footer class="footer container">
+  <div class="sponsorship">
+    <div class="container">
+      <h2>
+        Sponsorzy
+      </h2>
+
+      <div class="logo-grid">
+        <div>
+          <a href="https://www.dotcom-monitor.com/es/">
+            <img src="/assets/sponsors/dotcom-monitor-logo.png" alt="Dotcom-Monitor" />
+          </a>
+
+          <a href="https://www.loadview-testing.com/api-testing/">
+            <img src="/assets/sponsors/LoadView-logo.png" alt="LoadView" />
+          </a>
+
+          <a href="https://webhostingbuddy.com/wordpress-hosting/">
+            <img src="/assets/sponsors/web-hosting-buddy-logo.png" alt="Web Hosting Buddy" />
+          </a>
+
+          <a href="https://www.drivencoffee.com/">
+            <img src="/assets/sponsors/driven-coffee-logo.png" alt="Driven Coffee" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="legal legal--right">
+    <a href='https://joinmastodon.org'>Dołącz do Mastodona</a> · <a href='https://blog.joinmastodon.org'>Blog</a> · <a href='https://mastodon.social/@Mastodon' target='_blank'><i class='fab fa-mastodon'></i></a> · <a href='https://twitter.com/joinmastodon' rel='nofollow' target='_blank'><i class='fab fa-twitter'></i></a>
+  </p>
+
+  <p class="legal"><a href='https://github.com/tootsuite/documentation/tree/master/content/pl/user/moderating.md'>Zobacz źródła</a> · <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> · <a href='https://joinmastodon.org/imprint'>Imprint</a></p>
+</footer>
+
+</body>
+
+</html>

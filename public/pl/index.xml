@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Czym jest Mastodon? on Mastodon documentation</title>
+    <link>http://docs.joinmastodon.org/pl/</link>
+    <description>Recent content in Czym jest Mastodon? on Mastodon documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://docs.joinmastodon.org/pl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dealing with unwanted content</title>
+      <link>http://docs.joinmastodon.org/pl/user/moderating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/moderating/</guid>
+      <description>Filtering posts It is possible to filter statuses for specific keywords and phrases so that they can be hidden automatically.
+  A sample of active filters for various keywords in different contexts.
+  To create or manage your filters, go to Settings &amp;gt; Filters. The &amp;ldquo;Add new filter&amp;rdquo; button will let you create a new filter, and existing filters can be edited or deleted. Your existing filters will be summarized in a table.</description>
+    </item>
+    
+    <item>
+      <title>Dostosowanie profilu</title>
+      <link>http://docs.joinmastodon.org/pl/user/profile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/profile/</guid>
+      <description>Wygląd Twojego profilu   Karta profilu składająca się z nazwy wyświetlanej, awataru i nagłówka
+  Możesz zmienić to, jak Twój profil wygląda u innych kierując się do: Preferencje &amp;gt; Profil &amp;gt; Wygląd.
+Nazwa wyświetlana Twoja nazwa wyświetlana jest widoczna dla innych przy Twoim adrsie. Domyślnie możesz ustawić nazwę zawierającą do 30 znaków.
+Biogram Twój biogram to krótki opis Twojej osoby wyświetlana jako notatka na Twoim profilu. Domyślnie możesz ustawić biogram składający się maksymalnie z 500 znaków.</description>
+    </item>
+    
+    <item>
+      <title>Korzystanie z Mastodona zewnętrznie</title>
+      <link>http://docs.joinmastodon.org/pl/user/external/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/external/</guid>
+      <description>Zdalne interakcje z innym serwerem Mastodona   Przykład odnośnika bezpośredniego do wpisu na serwerze Mastodona
+  Kiedy odwiedzasz zdalny serwer oparty o Mastodona, kliknięcie dowolnego z przycisków interakcji przeniesie Cię do okna dialogowego, które przekieruje Cię na Twój lokalny serwer.
+  Ekran zdalnej interakcji przy odpowiadaniu na wpis
+  Logowanie się w aplikacji Mastodona Możesz użyć swojego konta na Mastodonie aby zalogować się w dowolnej aplikacji obsługującej API Mastodona.</description>
+    </item>
+    
+    <item>
+      <title>Moving or leaving accounts</title>
+      <link>http://docs.joinmastodon.org/pl/user/moving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/moving/</guid>
+      <description>Exporting your information   The data export page in settings
+  At any time you want, you can go to Settings &amp;gt; Export and download a CSV file for your current followed accounts, your currently created lists, your currently blocked accounts, your currently muted accounts, and your currently blocked domains. Your following, blocking, muting, and domain-blocking lists can be imported at Settings &amp;gt; Import, where they can either be merged or overwritten.</description>
+    </item>
+    
+    <item>
+      <title>Promowanie siebie i innych</title>
+      <link>http://docs.joinmastodon.org/pl/user/discoverability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/discoverability/</guid>
+      <description>Wyróżnione odnośniki na profilu Wyróżnione hashtagi   Wyróżniony hashtag wraz z datą ostatniego użycia i całkowitym użyciem.
+  Możesz wyróżnić hashtagi których używasz najczęściej. Przejdź do Preferencje &amp;gt; Profil &amp;gt; Wyróżnione hashtagi, aby wybrać które hashtagi obecnie wyróżniasz. Po wybraniu, odnośnik do tego hashtagu wraz z datą ostatniego użycia przez Ciebie oraz łączną liczbą jego wystąpień pojawi się na Twoim profilu.
+Wyróżnione profile   Cztery losowo wybrane wyróżnione profile.</description>
+    </item>
+    
+    <item>
+      <title>Rejestracja konta</title>
+      <link>http://docs.joinmastodon.org/pl/user/signup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/signup/</guid>
+      <description>Wybór serwera Musisz wybrać stronę na której zarejestrujesz się, tak jakbyś wybierał(-a) dostawcę poczty e-mail lub realm w World of Warcraft dla swojej nowej postaci. Ta strona będzie Twoim dostawcą usługi, hostem dla Twojego konta, Twoim profilem i Twoją stroną główną.
+ Możesz przeglądać listę wybranych serwerów według kategorii i języków na joinmastodon.org.  Rozumienie zasad strony Zanim zarejestrujesz się, ważnym jest zapoznanie się z zasadami i regulaminem. Serwer Mastodona ma zwykle zapisane je na stronie /about/more, którą możesz znaleźć klikając na „dowiedz się więcej” na stronie którą widzisz, gdy nie jesteś zalogowany(-a).</description>
+    </item>
+    
+    <item>
+      <title>Running your own server</title>
+      <link>http://docs.joinmastodon.org/pl/user/run-your-own/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/run-your-own/</guid>
+      <description>Why would you want to run your own Mastodon server?  Absolute control over your own voice on the web, not subject to anyone else&amp;rsquo;s rules or whims. Your server is your property, with your rules. It will exist as long as you want it to exist. You are not isolated on your own server. You can follow anyone on any other server, and they can follow you and you can exchange messages just like if you were on the same server.</description>
+    </item>
+    
+    <item>
+      <title>Set your preferences</title>
+      <link>http://docs.joinmastodon.org/pl/user/preferences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/preferences/</guid>
+      <description>Customizing the user interface Choose a theme Mastodon defaults to a dark theme, but a light or high-contrast theme can be selected.
+  Mastodon light theme
+  Choose your layout Mastodon defaults to a simple, one-column layout with a compose box on the left and a column switcher on the right. You can choose to enable the advanced web interface, which allows you view and pin multiple columns at the same time.</description>
+    </item>
+    
+    <item>
+      <title>Tworzenie wpisów</title>
+      <link>http://docs.joinmastodon.org/pl/user/posting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/posting/</guid>
+      <description>Tworzenie wpisów z włączonym CW
+  Tekst Główna treść każdego wpisu może zostać utworzona z użyciem pola tekstowego. Domyślnym ograniczeniem ilości znaków jest 500 znaków.
+Odnośniki   Odnośniki muszą zaczynać się od http(s):// i są liczone jako 23 znaki niezależnie od ich długości.
+  Jeżeli uwzględnisz w swoim wpisie odnośniki, muszą one zaczynać się od http:// lub https://. Wszystkie odnośniki są traktowane, jakby miały 23 znaki, niezależnie od ich rzeczywistej długości, więc nie musisz korzystać z usług skracania odnośników.</description>
+    </item>
+    
+    <item>
+      <title>Using the network features</title>
+      <link>http://docs.joinmastodon.org/pl/user/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/network/</guid>
+      <description>Browsing content through public timelines   Posts within a public timeline
+  To allow you to discover potentially interesting content, Mastodon provides a way to browse all public posts. Well, there is no global shared state between all servers, so there is no way to browse all public posts. When you browse the federated timeline, you see all public posts that the server you are on knows about. There are various ways your server may discover posts, but the bulk of them will be from people that other users on your server follow.</description>
+    </item>
+    
+    <item>
+      <title>Więcej ustawień</title>
+      <link>http://docs.joinmastodon.org/pl/user/contacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/contacts/</guid>
+      <description>Tworzenie zaproszeń   Zaproś ludzi z ustawień swojego konta
+  Zaproszenia mogą być generowane aby udostępniać je innym osobom, a niektóre serwery mogą wymagać zaproszenia, aby zarejestrować konto. Przy generowaniu odnośnika zapraszającego, możesz określić maksymalną liczbę użyć odnośnika lub jak długo będzie on aktywny. Odnośniki z zaproszeniami mogą być dezaktywowane w każdym momencie.
+Obserwacje i obserwujący   Wzajemni obserwujący którzy nie przenieśli konta, sortowani według daty ostatniej aktywności</description>
+    </item>
+    
+  </channel>
+</rss>
