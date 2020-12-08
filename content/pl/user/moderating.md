@@ -1,107 +1,106 @@
 ---
-title: Dealing with unwanted content
-description: Control what you see, for a more comfortable social media experience.
+title: Radzenie sobie z niechcianą treścią
+description: Kontroluj co zobaczysz, dla bardziej przyjaznego doświadczenia.
 menu:
   docs:
     weight: 50
     parent: user
 ---
 
-## Filtering posts {#filters}
+## Filtrowanie wpisów {#filters}
 
-It is possible to filter statuses for specific keywords and phrases so that they can be hidden automatically.
+Możliwe jest filtrowanie wpisów według określonych słów kluczowych lub fraz, aby były automatycznie ukrywane.
 
-{{< figure src="/assets/image%20%2848%29.png" caption="A sample of active filters for various keywords in different contexts." >}}
+{{< figure src="/assets/image%20%2848%29.png" caption="Przykład aktywnych filtrów dla różnych słów kluczowych w różnych kontekstach." >}}
 
-To create or manage your filters, go to Settings &gt; Filters. The "Add new filter" button will let you create a new filter, and existing filters can be edited or deleted. Your existing filters will be summarized in a table.
+Aby utworzyć i zarządzać filtrami, odwiedź Preferencje &gt; Filtry. Przycisk „Dodaj nowy filtr” pozwoli na utworzenie nowego filtru, a istniejące filtry mogą zostać edytowane lub usunięte. Istniejące filtry są podsumowane w tabeli.
 
-{{< figure src="/assets/image%20%2814%29.png" caption="Filters can have an expiry date, specific contexts, server-side drop, and use word boundaries." >}}
+{{< figure src="/assets/image%20%2814%29.png" caption="Filtry mogą mieć datę wyczerpania, określone konteksty, usuwanie po stronie serwera lub używać granic słów." >}}
 
-Filters have the following settings:
+Filtry mają następujące opcje:
 
-### Keyword or phrase {#filter-phrase}
+### Słowa kluczowe lub frazy {#filter-phrase}
 
-This is the string that will be matched. The keyword will be searched for in any status's content, including CW, media descriptions, and poll options.
+To ciąg znaków, który jest sprawdzany. Słowo kluczowe będzie wyszukiwane w zawartości wpisu, uwzględniając CW, opisy mediów i opcje ankiet.
 
-### Expire after {#filter-expire}
+### Wygasanie po czasie {#filter-expire}
 
-Optionally only apply the filter for a limited amount of time. Expired filters are not automatically deleted, but can be reactivated by setting a new expiry date \(or changing it back to "never" expire\).
+Opcjonalnie możesz zastosować filtr tylko na określony okres. Wygaśnięte filtry nie są automatycznie usuwane, ale mogą być włączone ponownie, ustawiając nową datę wygaśnięcia \(lub wyłączając wygasanie\).
 
-### Filter contexts {#filter-context}
+### Kontekst filtrów {#filter-context}
 
-Choose where the filter will be applied:
+Wybierz, gdzie zostanie zastosowany filtr:
+* Strona główna i listy – spełniające kryterium wpisy zostaną usunięte ze strony głównej i list
+* Powiadomienia – spełniające kryterium powiadomienia nie będą wyświetlane
+* Publiczne osie czasu – spełniające kryterium wpisy nie będą pojawiać się na lokalnych/sfederowanych osiach czasu
+* Konwersacje – spełniające kryterium wpisy będą ukrywane w wątkach i szczegółowym widoku
 
-* Home timeline and lists = matching statuses will be removed from your home feed and lists
-* Notifications = matching notifications will not be shown
-* Public timelines = matching statuses will not appear in local/federated timelines
-* Conversations = matching statuses will be hidden in threads and detailed views
+### Usuwanie zamiast ukrywania {#filter-drop}
 
-### Drop instead of hide {#filter-drop}
+Filtrowanie zwykle odbywa się po stronie klienta, więc wyłączenie filtru sprawi, że filtrowane wpisu będą widoczne ponownie. Jeśli jednak włączysz „Usuwaj zamiast ukrywać”, pasujące wpisy będą całkowicie usuwane i nigdy nie zobaczysz ich w powiadomieniach lub na stronie głównej.
 
-Filtering is usually done client-side, so that disabling a filter will cause filtered statuses to be visible again. However, if you enable "drop instead of hide", any matching statuses will be disappear completely and will never be delivered to your home or notifications.
+### Pełne słowa {#filter-whole}
 
-### Whole word {#filter-whole}
+Filtry zwykle są stosowane we wpisach zawierających wskazane znaki, niezależnie czy są one w środku słowa. Włączenie opcji „Całe słowo” sprawi, że filtr będzie działał tylko, jeżeli słowo jest otoczone przez spacje lub inne znaki niealfanumeryczne.
 
-Filters normally apply to any status that contains the included characters, regardless of whether they are in the middle of a word. Enabling "whole word" will only apply the filter if the keyword is surrounded by spaces or other non-alphanumeric characters.
+## Działania po stronie użytkownika {#blocking-and-muting}
 
-## User-level actions {#blocking-and-muting}
+{{< figure src="/assets/image%20%2824%29.png" caption="Menu wyboru użytkownika oferuje różnorodne działania." >}}
 
-{{< figure src="/assets/image%20%2824%29.png" caption="The user dropdown menu offers various actions." >}}
+### Ukrywanie udostępnień {#hide-boosts}
 
-### Hiding boosts {#hide-boosts}
+Jeżeli ukryjesz czyjeś udostępnienia, nie zobaczysz ich udostępnień na stronie głównej. Dotyczy to tylko kont użytkowników, których obecnie obserwujesz.
 
-If you hide boosts from someone, you won’t see their boosts in your home feed. This option only appears on users who you are currently following.
+### Wyciszanie {#mute}
 
-### Muting {#mute}
+{{< figure src="/assets/image%20%2852%29.png" caption="Przykład wyciszonych kont." >}}
 
-{{< figure src="/assets/image%20%2852%29.png" caption="Sample of muted accounts." >}}
+Po wyciszeniu możesz zadecydować czy wyciszysz powiadomienia od tej osoby. Wyciszenie bez wyciszania powiadomień sprawi, że:
 
-When muting, you have the option to mute notifications from them or not. Muting without muting notifications hides the user from your view:
+* Nie zobaczysz tego użytkownika na stronie głównej
+* Nie zobaczysz innych osób, gdy udostępniają tego użytkownika
+* Nie zobaczysz innych osób, gdy wspomniają o tym użytkowniku
+* Nie zobaczysz tego użytkownika w publicznych osiach czasu
 
-* You won’t see the user in your home feed
-* You won’t see other people boosting the user
-* You won’t see other people mentioning the user
-* You won’t see the user in public timelines
+Jeżeli wybierzesz, aby wyciszyć też powiadomienia od tego użytkownika, nie będziesz dostawać też od niego powiadomień.
 
-If you choose to also mute notifications from them, you will additionally not see notifications from that user.
+Użytkownik nie może się dowiedzieć, że został wyciszony.
 
-The user has no way of knowing they have been muted.
+### Blokowanie {#block}
 
-### Blocking {#block}
+{{< figure src="/assets/image%20%2836%29.png" caption="Przykład zablokowanych kont." >}}
 
-{{< figure src="/assets/image%20%2836%29.png" caption="Sample of blocked accounts." >}}
+Blokowanie ukrywa użytkownika z Twojego widoku:
 
-Blocking hides a user from your view:
+* Nie zobaczysz tego użytkownika na stronie głównej
+* Nie zobaczysz innych osób, gdy udostępniają tego użytkownika
+* Nie zobaczysz innych osób, gdy wspomniają o tym użytkowniku
+* Nie zobaczysz tego użytkownika w publicznych osiach czasu
+* Nie zobaczysz powiadomień od tego użytkownika
 
-* You won’t see the user in your home feed
-* You won’t see other people boosting the user
-* You won’t see other people mentioning the user
-* You won’t see the user in public timelines
-* You won’t see notifications from that user
+Dodatkowo, ze strony zablokowanego użytkownika:
 
-Additionally, on the blocked user’s side:
+* Użytkownik przestaje Cię obserwować
+* Użytkownik nie może Cię zaobserwować ponownie
+* Użytkownik nie zobaczy udostępnień Twoich wpisów przez innych
+* Użytkownik nie zobaczy Cię w publicznych osiach czasu
 
-* The user is forced to unfollow you
-* The user cannot follow you
-* The user won’t see other people’s boosts of you
-* The user won’t see you in public timelines
+Jeżeli jesteś na tym samym serwerze, na którym jest zablokowana osoba, ta osoba nie będzie mogła zobaczyć Twoich wpisów na Twoim profilu, gdy jest zalogowana.
 
-If you and the blocked user are on the same server, the blocked user will not be able to view your posts on your profile while logged in.
-
-### Hiding an entire server {#hide-domain}
+### Ukrywanie całego serwera {#hide-domain}
 
 ![](/assets/image%20%2861%29.png)
 
-If you hide an entire server:
+Jeżeli ukryjesz cały serwer:
 
-* You will not see posts from that server on the public timelines
-* You won’t see other people’s boosts of that server in your home feed
-* You won’t see notifications from that server
-* You will lose any followers that you might have had on that server
+* Nie zobaczysz wpisów z tego serwera na publicznych osiach czasu
+* Nie zobaczysz udostępnień z tego serwera na stronie głównej
+* Nie zobaczysz powiadomień z tego serwera
+* Utracisz obserwujących z tego serwera
 
-## Reporting problematic content to moderators {#report}
+## Zgłaszanie nieodpowiedniej treści moderatorom {#report}
 
-{{< figure src="/assets/image%20%283%29.png" caption="The report modal allows selecting example statuses, adding a note, and forwarding reports." >}}
+{{< figure src="/assets/image%20%283%29.png" caption="Modal zgłaszania pozwalający na wybór przykładowych wpisów, dodanie notatki czy przekierowanie zgłoszeń." >}}
 
-If you see a status or user that is violating the rules of your website, you can report that user to your site's moderators. Clicking the "report" option on the user dropdown or status dropdown will open the report modal. Here, you can \(and should\) add a note about why you are reporting this account. You can attach certain problematic statuses for additional context on why you are reporting the account, and if their conduct is violating the rules of the remote website, you can also choose to forward the report to their site's moderators.
+Jeżeli zobaczysz wpis lub użytkownika naruszającego zasady Twojego serwera, możesz zgłosić użytkownika moderatorom swojego serwera. Wybranie opcji „Zgłoś” otworzy okno zgłaszania. Tam możesz \(jest to wskazane\) dodać notatkę, w której napiszesz, dlaczego zgłaszasz to konto. Możesz załączyć nieodpowiednie wpisy dla dodatkowego kontekstu zgłoszenia, a jeżeli naruszają one zasady zdalnego serwera, możesz przekierować zgłoszenie również do jego moderatorów.
 
