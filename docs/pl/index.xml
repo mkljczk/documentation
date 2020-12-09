@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://docs.joinmastodon.org/pl/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dostosowanie profilu</title>
+      <title>Dostosuj swój profil</title>
       <link>http://docs.joinmastodon.org/pl/user/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -19,17 +19,17 @@ Biogram Twój biogram to krótki opis Twojej osoby wyświetlana jako notatka na 
     </item>
     
     <item>
-      <title>Korzystanie z funkcjonalności sieci</title>
+      <title>Korzystaj z funkcjonalności sieci</title>
       <link>http://docs.joinmastodon.org/pl/user/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.joinmastodon.org/pl/user/network/</guid>
       <description>Przeglądanie zawartości z publicznych osi czasu   Wpisy na publicznej osi czasu
-  To allow you to discover potentially interesting content, Mastodon provides a way to browse all public posts. Well, there is no global shared state between all servers, so there is no way to browse all public posts. When you browse the federated timeline, you see all public posts that the server you are on knows about.</description>
+  Aby pozwolić na poznanie potencjalnie interesującej treści, Mastodon pozwala na przeglądanie wszystkich publicznych wpisów. Ponieważ nie ma tu danych współdzielonych między wszystkimi serwerami, nie możesz przeglądać wszystkich publicznych wpisów. Kiedy przeglądasz oś czasu federacji, zobaczysz wszystkie wpisy, o których wie serwer. Istnieje wiele sposobów, aby Twój serwer dowiadywał się o wpisach, ale ogromna część z nich to po prostu wpisy osób śledzonych przez użytkowników Twojego serwera.</description>
     </item>
     
     <item>
-      <title>Korzystanie z Mastodona zewnętrznie</title>
+      <title>Korzystaj z Mastodona zewnętrznie</title>
       <link>http://docs.joinmastodon.org/pl/user/external/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -41,7 +41,7 @@ Biogram Twój biogram to krótki opis Twojej osoby wyświetlana jako notatka na 
     </item>
     
     <item>
-      <title>Promowanie siebie i innych</title>
+      <title>Promuj siebie i innych</title>
       <link>http://docs.joinmastodon.org/pl/user/discoverability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -52,7 +52,7 @@ Wyróżnione profile   Cztery losowo wybrane wyróżnione profile.</description>
     </item>
     
     <item>
-      <title>Prowadzenie własnego serwera</title>
+      <title>Prowadź swój własny serwer</title>
       <link>http://docs.joinmastodon.org/pl/user/run-your-own/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -61,7 +61,7 @@ Wyróżnione profile   Cztery losowo wybrane wyróżnione profile.</description>
     </item>
     
     <item>
-      <title>Przenoszenie lub opuszczanie kont</title>
+      <title>Przenieś lub opuść kont</title>
       <link>http://docs.joinmastodon.org/pl/user/moving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -84,17 +84,7 @@ Zażądanie archiwum wpisów lub mediów jest możliwe co 7 dni i mogą one zost
     </item>
     
     <item>
-      <title>Rejestracja konta</title>
-      <link>http://docs.joinmastodon.org/pl/user/signup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://docs.joinmastodon.org/pl/user/signup/</guid>
-      <description>Wybór serwera Musisz wybrać stronę, na której zarejestrujesz się, tak jakbyś wybierał(-a) dostawcę poczty e-mail lub realm w World of Warcraft dla swojej nowej postaci. Ta strona będzie Twoim dostawcą usługi, hostem dla Twojego konta, Twoim profilem i Twoją stroną główną.
- Możesz przeglądać listę wybranych serwerów według kategorii i języków na joinmastodon.org.  Rozumienie zasad strony Zanim zarejestrujesz się, ważnym jest zapoznanie się z zasadami i regulaminem. Serwer Mastodona ma zwykle zapisane je na stronie /about/more, którą możesz znaleźć, klikając na „dowiedz się więcej” na stronie, którą widzisz, gdy nie jesteś zalogowany(-a).</description>
-    </item>
-    
-    <item>
-      <title>Tworzenie wpisów</title>
+      <title>Utwórz wpisy</title>
       <link>http://docs.joinmastodon.org/pl/user/posting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -114,6 +104,16 @@ Odnośniki   Odnośniki muszą zaczynać się od http(s):// i są liczone jako 2
       <description>Tworzenie zaproszeń   Zaproś ludzi z ustawień swojego konta
   Zaproszenia mogą być generowane, aby udostępniać je innym osobom, a niektóre serwery mogą wymagać zaproszenia, aby zarejestrować konto. Przy generowaniu odnośnika zapraszającego, możesz określić maksymalną liczbę użyć odnośnika lub jak długo będzie on aktywny. Odnośniki z zaproszeniami mogą być dezaktywowane w każdym momencie.
 Obserwacje i obserwujący   Wzajemni obserwujący, którzy nie przenieśli konta, sortowani według daty ostatniej aktywności</description>
+    </item>
+    
+    <item>
+      <title>Zarejestruj konto</title>
+      <link>http://docs.joinmastodon.org/pl/user/signup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/pl/user/signup/</guid>
+      <description>Wybór serwera Musisz wybrać stronę, na której zarejestrujesz się, tak jakbyś wybierał(-a) dostawcę poczty e-mail lub realm w World of Warcraft dla swojej nowej postaci. Ta strona będzie Twoim dostawcą usługi, hostem dla Twojego konta, Twoim profilem i Twoją stroną główną.
+ Możesz przeglądać listę wybranych serwerów według kategorii i języków na joinmastodon.org.  Rozumienie zasad strony Zanim zarejestrujesz się, ważnym jest zapoznanie się z zasadami i regulaminem. Serwer Mastodona ma zwykle zapisane je na stronie /about/more, którą możesz znaleźć, klikając na „dowiedz się więcej” na stronie, którą widzisz, gdy nie jesteś zalogowany(-a).</description>
     </item>
     
     <item>
