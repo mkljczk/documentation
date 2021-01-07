@@ -11,11 +11,11 @@ menu:
 
 Możliwe jest filtrowanie wpisów według określonych słów kluczowych lub fraz, aby były automatycznie ukrywane.
 
-{{< figure src="/assets/image%20%2848%29.png" caption="Przykład aktywnych filtrów dla różnych słów kluczowych w różnych kontekstach." >}}
+{{< figure src="/assets/filter-list.jpg" caption="Przykład aktywnych filtrów dla różnych słów kluczowych w różnych kontekstach." >}}
 
 Aby utworzyć i zarządzać filtrami, odwiedź Preferencje &gt; Filtry. Przycisk „Dodaj nowy filtr” pozwoli na utworzenie nowego filtru, a istniejące filtry mogą zostać edytowane lub usunięte. Istniejące filtry są podsumowane w tabeli.
 
-{{< figure src="/assets/image%20%2814%29.png" caption="Filtry mogą mieć datę wyczerpania, określone konteksty, usuwanie po stronie serwera lub używać granic słów." >}}
+{{< figure src="/assets/filter-edit.jpg" caption="Filtry mogą mieć datę wyczerpania, określone konteksty, usuwanie po stronie serwera lub używać granic słów." >}}
 
 Filtry mają następujące opcje:
 
@@ -45,7 +45,7 @@ Filtry zwykle są stosowane we wpisach zawierających wskazane znaki, niezależn
 
 ## Działania po stronie użytkownika {#blocking-and-muting}
 
-{{< figure src="/assets/image%20%2824%29.png" caption="Menu wyboru użytkownika oferuje różnorodne działania." >}}
+{{< figure src="/assets/profile-dropdown.jpg" caption="Menu wyboru profilu oferuje różnorodne działania." >}}
 
 ### Ukrywanie udostępnień {#hide-boosts}
 
@@ -53,7 +53,7 @@ Jeżeli ukryjesz czyjeś udostępnienia, nie zobaczysz ich udostępnień na stro
 
 ### Wyciszanie {#mute}
 
-{{< figure src="/assets/image%20%2852%29.png" caption="Przykład wyciszonych kont." >}}
+{{< figure src="/assets/muted.jpg" caption="Przykład wyciszonych kont." >}}
 
 Po wyciszeniu możesz zadecydować czy wyciszysz powiadomienia od tej osoby. Wyciszenie bez wyciszania powiadomień sprawi, że:
 
@@ -64,11 +64,13 @@ Po wyciszeniu możesz zadecydować czy wyciszysz powiadomienia od tej osoby. Wyc
 
 Jeżeli wybierzesz, aby wyciszyć też powiadomienia od tego użytkownika, nie będziesz dostawać też od niego powiadomień.
 
+Wyciszenia mogą mieć dodatkowo czas, po którym wygasną.
+
 Użytkownik nie może się dowiedzieć, że został wyciszony.
 
 ### Blokowanie {#block}
 
-{{< figure src="/assets/image%20%2836%29.png" caption="Przykład zablokowanych kont." >}}
+{{< figure src="/assets/blocked.jpg" caption="Przykład zablokowanych kont." >}}
 
 Blokowanie ukrywa użytkownika z Twojego widoku:
 
@@ -87,11 +89,11 @@ Dodatkowo, ze strony zablokowanego użytkownika:
 
 Jeżeli jesteś na tym samym serwerze, na którym jest zablokowana osoba, ta osoba nie będzie mogła zobaczyć Twoich wpisów na Twoim profilu, gdy jest zalogowana.
 
-### Ukrywanie całego serwera {#hide-domain}
+### Ukrywanie całego serwera {#block-domain}
 
-![](/assets/image%20%2861%29.png)
+![](/assets/block-domain.jpg)
 
-Jeżeli ukryjesz cały serwer:
+Jeżeli zablokujesz cały serwer:
 
 * Nie zobaczysz wpisów z tego serwera na publicznych osiach czasu
 * Nie zobaczysz udostępnień z tego serwera na stronie głównej
@@ -100,7 +102,7 @@ Jeżeli ukryjesz cały serwer:
 
 ## Zgłaszanie nieodpowiedniej treści moderatorom {#report}
 
-{{< figure src="/assets/image%20%283%29.png" caption="Modal zgłaszania pozwalający na wybór przykładowych wpisów, dodanie notatki czy przekierowanie zgłoszeń." >}}
+{{< figure src="/assets/report-modal.jpg" caption="Modal zgłaszania pozwalający na wybór przykładowych wpisów, dodanie notatki czy przekierowanie zgłoszeń." >}}
 
 Jeżeli zobaczysz wpis lub użytkownika naruszającego zasady Twojego serwera, możesz zgłosić użytkownika moderatorom swojego serwera. Wybranie opcji „Zgłoś” otworzy okno zgłaszania. Tam możesz \(jest to wskazane\) dodać notatkę, w której napiszesz, dlaczego zgłaszasz to konto. Możesz załączyć nieodpowiednie wpisy dla dodatkowego kontekstu zgłoszenia, a jeżeli naruszają one zasady zdalnego serwera, możesz przekierować zgłoszenie również do jego moderatorów.
 
