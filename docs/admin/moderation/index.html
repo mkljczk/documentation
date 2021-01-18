@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -848,6 +844,7 @@
 <p>This limitation is reversible, the account can be unsilenced at any time.</p>
 <h3 id="suspend-user">Suspend</h3>
 <p>A Mastodon suspension is synonymous with deletion. The account no longer appears in search, the profile page is gone, all of the posts, uploads, followers, and all other data is removed. This limitation is <strong>irreversible</strong>. While the account can be unsuspended, allowing the user to take control of it again, the old data is gone for good.</p>
+<p>As of v3.3.0, suspensions are now reversible for 30 days.</p>
 <h2 id="server-wide-moderation">Server-wide moderation</h2>
 <p>Because individually moderating a large volume of users from a misbehaving server can be exhausting, it is possible to pre-emptively moderate against all users from that particular server using a so-called <strong>domain block</strong>, which comes with several different levels of severity.</p>
 <h3 id="reject-media">Reject media</h3>
@@ -879,7 +876,7 @@ sudo iptables -I INPUT <span style="color:#bd93f9">1</span> -m <span style="colo
 
 
     <p style="color: #687590;">
-      Last updated May 21, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/admin%5cmoderation.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/admin%5cmoderation.md' style="color: #687590;">Improve this page</a>
 
       
         <br />

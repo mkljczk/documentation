@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -833,6 +829,7 @@
         <li><a href="#actions">Interacting with people&rsquo;s posts</a></li>
         <li><a href="#notifications">Notifications</a></li>
         <li><a href="#follow">Following profiles</a></li>
+        <li><a href="#bell">Enabling notifications</a></li>
         <li><a href="#search">Search</a></li>
         <li><a href="#direct">Direct conversations</a></li>
         <li><a href="#lists">List timelines</a></li>
@@ -844,7 +841,7 @@
   <div class="e-content">
     <h2 id="timelines">Browsing content through public timelines</h2>
 <figure>
-    <img src="/assets/image%20%2830%29.png"
+    <img src="/assets/timeline.jpg"
          alt="Posts within a public timeline"/> <figcaption>
             <p>Posts within a public timeline</p>
         </figcaption>
@@ -854,7 +851,7 @@
 <p>There is a way to filter the federated timeline to view only public posts created on your server: The <strong>local timeline</strong>. Mind that “local” here refers to the server, not to a geographical location.</p>
 <h2 id="actions">Interacting with people&rsquo;s posts</h2>
 <figure>
-    <img src="/assets/image%20%2821%29.png"
+    <img src="/assets/status.jpg"
          alt="An expanded view can be loaded by clicking a status in the timeline."/> <figcaption>
             <p>An expanded view can be loaded by clicking a status in the timeline.</p>
         </figcaption>
@@ -870,7 +867,7 @@
 </ul>
 <h2 id="notifications">Notifications</h2>
 <figure>
-    <img src="/assets/image%20%2850%29.png"
+    <img src="/assets/notifications.jpg"
          alt="Notifications column"/> <figcaption>
             <p>Notifications column</p>
         </figcaption>
@@ -882,16 +879,21 @@
 <li><strong>Favourites:</strong> received when someone has favourited one of your posts.</li>
 <li><strong>Boosts:</strong> received when someone has boosted one of your posts.</li>
 <li><strong>Polls:</strong> Received when a poll that you have voted in or created has ended.</li>
+<li><strong>Statuses:</strong> Received when a user you have enabled notifications for posts a status.</li>
 <li><strong>Follows:</strong> Received when someone has followed your profile.</li>
 </ul>
+<p>When unread notifications are present, a checkmark will appear in the column header. Clicking this checkmark will mark notifications as read.</p>
 <h2 id="follow">Following profiles</h2>
-<p><img src="/assets/image%20%2811%29.png" alt=""></p>
+<p><img src="/assets/profile.jpg" alt=""></p>
 <p>As long as you encounter a person within your app’s user interface, e.g. the web interface on your home server, or your mobile app, you can just click “follow” and you won’t notice a difference if that person is on your server or not.</p>
 <p>However if you come across someone’s public profile hosted on a different server, there’s an obstacle: That server sees you as just another anonymous visitor. Not to worry! You can simply copy the URL of that profile, or of one of their posts, and then paste that URL into the search function.</p>
 <p>If you are visiting a public page on another Mastodon site, see <a href="../external/#interact">Using Mastodon outside of your site</a>.</p>
+<h2 id="bell">Enabling notifications</h2>
+<p><img src="/assets/bell.jpg" alt=""></p>
+<p>If you are following someone, you also have the option to receive a notification every time they post. To opt into this functionality, click the bell icon.</p>
 <h2 id="search">Search</h2>
 <figure>
-    <img src="/assets/image%20%2819%29.png"
+    <img src="/assets/search.jpg"
          alt="The search function can be accessed from the sidebar."/> <figcaption>
             <p>The search function can be accessed from the sidebar.</p>
         </figcaption>
@@ -899,21 +901,21 @@
 
 <p>Mastodon&rsquo;s basic search allows logged-in users to find toots containing a specific hashtag, or to load a user or status directly if they know the URL or address. Searching for a term will show profiles whose username or display name contains that term, as well as hashtags that match or contain that term.</p>
 <figure>
-    <img src="/assets/image%20%2839%29.png"
+    <img src="/assets/direct-url.jpg"
          alt="An example of a toot being loaded directly by its URL."/> <figcaption>
             <p>An example of a toot being loaded directly by its URL.</p>
         </figcaption>
 </figure>
 
 <figure>
-    <img src="/assets/image%20%2823%29.png"
+    <img src="/assets/search-accounts.jpg"
          alt="An example of accounts returned when searching for &amp;quot;cats&amp;quot;."/> <figcaption>
             <p>An example of accounts returned when searching for &quot;cats&quot;.</p>
         </figcaption>
 </figure>
 
 <figure>
-    <img src="/assets/image%20%2827%29.png"
+    <img src="/assets/search-hashtags.jpg"
          alt="An example of hashtags returned when searching for &amp;quot;cats&amp;quot;."/> <figcaption>
             <p>An example of hashtags returned when searching for &quot;cats&quot;.</p>
         </figcaption>
@@ -928,7 +930,7 @@
 </ul>
 <h2 id="direct">Direct conversations</h2>
 <figure>
-    <img src="/assets/image%20%2812%29.png"
+    <img src="/assets/dm-column.jpg"
          alt="A list of conversations containing direct messages."/> <figcaption>
             <p>A list of conversations containing direct messages.</p>
         </figcaption>
@@ -936,7 +938,7 @@
 
 <p>In Mastodon, direct messages are simply toots that have the &ldquo;direct&rdquo; visibility selected. Visibility can be selected per-post, which allows changing the privacy level later in a thread. The direct messages column currently shows a list of all conversations containing a direct post. Clicking on a conversation will load the associated thread.</p>
 <figure>
-    <img src="/assets/image%20%2857%29.png"
+    <img src="/assets/dm-thread.jpg"
          alt="A direct message in a thread."/> <figcaption>
             <p>A direct message in a thread.</p>
         </figcaption>
@@ -944,10 +946,10 @@
 
 <h2 id="lists">List timelines</h2>
 <p>Lists are subsets of your home timeline. You can create a list, give it a name, and add users that you follow to that list.</p>
-<p><img src="/assets/image%20%2828%29.png" alt=""></p>
-<p>Opening a list will load that list&rsquo;s timeline. List timelines contain only posts by members of that list, as well as replies to you or to other members of the list.</p>
+<p><img src="/assets/lists.jpg" alt=""></p>
+<p>Opening a list will load that list&rsquo;s timeline. List timelines contain only posts by members of that list, as well as replies to you or to other members of the list. This can be changed to show replies to all people you follow, or to no one.</p>
 <figure>
-    <img src="/assets/image%20%285%29.png"
+    <img src="/assets/list.jpg"
          alt="A list timeline"/> <figcaption>
             <p>A list timeline</p>
         </figcaption>
@@ -956,7 +958,7 @@
 
 
     <p style="color: #687590;">
-      Last updated May 21, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/user%5cnetwork.md' style="color: #687590;">Improve this page</a>
+      Last updated January 7, 2021 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/user%5cnetwork.md' style="color: #687590;">Improve this page</a>
 
       
         <br />

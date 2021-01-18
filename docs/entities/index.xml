@@ -197,9 +197,7 @@ Version history: Added in 3.0.0
 name Description: The name of the hashtag being featured.
 Type: String
 Version history: Added in 3.0.0
-statuses_count Description: The number of authored statuses containing this hashtag.
-Type: Number
-Version history: Added in 3.</description>
+url Description: A link to all statuses by a user that contain this hashtag.</description>
     </item>
     
     <item>
@@ -277,11 +275,15 @@ proof_url Description: A link to a statement of identity proof, hosted by the id
       <guid>http://docs.joinmastodon.org/entities/list/</guid>
       <description>Example { &amp;#34;id&amp;#34;: &amp;#34;12249&amp;#34;, &amp;#34;title&amp;#34;: &amp;#34;Friends&amp;#34; } Required attributes id Description: The internal database ID of the list.
 Type: String (cast from an integer, but not guaranteed to be a number)
-Version history: Added in 2.1.0
+Version history:
+2.1.0 - added
 title Description: The user-defined title of the list.
 Type: String
-Version history: Added in 2.1.0
-See also  lists   app/serializers/rest/list_serializer.rb  </description>
+Version history:
+2.1.0 - added
+replies_policy Description: The user-defined title of the list.
+Type: String (Enumerable oneOf)
+followed = Show replies to any followed user</description>
     </item>
     
     <item>
@@ -372,7 +374,7 @@ Version history: Added in 2.4.0</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.joinmastodon.org/entities/relationship/</guid>
-      <description>Example { &amp;#34;id&amp;#34;: &amp;#34;1&amp;#34;, &amp;#34;following&amp;#34;: true, &amp;#34;showing_reblogs&amp;#34;: true, &amp;#34;followed_by&amp;#34;: true, &amp;#34;blocking&amp;#34;: false, &amp;#34;blocked_by&amp;#34;: false, &amp;#34;muting&amp;#34;: false, &amp;#34;muting_notifications&amp;#34;: false, &amp;#34;requested&amp;#34;: false, &amp;#34;domain_blocking&amp;#34;: false, &amp;#34;endorsed&amp;#34;: false, &amp;#34;note&amp;#34;: &amp;#34;&amp;#34; } Required attributes id Description: The account id.
+      <description>Example { &amp;#34;id&amp;#34;: &amp;#34;1&amp;#34;, &amp;#34;following&amp;#34;: true, &amp;#34;showing_reblogs&amp;#34;: true, &amp;#34;notifying&amp;#34;: false, &amp;#34;followed_by&amp;#34;: true, &amp;#34;blocking&amp;#34;: false, &amp;#34;blocked_by&amp;#34;: false, &amp;#34;muting&amp;#34;: false, &amp;#34;muting_notifications&amp;#34;: false, &amp;#34;requested&amp;#34;: false, &amp;#34;domain_blocking&amp;#34;: false, &amp;#34;endorsed&amp;#34;: false, &amp;#34;note&amp;#34;: &amp;#34;&amp;#34; } Required attributes id Description: The account id.
 Type: String (cast from an integer, but not guaranteed to be a number)
 Version history:
 0.6.0 - added

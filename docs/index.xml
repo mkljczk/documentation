@@ -66,7 +66,8 @@ registrations Description: User registrations since the week began.</description
 Returns: Admin::Account
 OAuth: User token + admin:read:accounts
 Version history:
- 2.9.1 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters local optional  boolean  Filter for local accounts?</description>
+2.9.1 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters local optional  boolean  Filter for local accounts?</description>
     </item>
     
     <item>
@@ -174,7 +175,9 @@ Client attributes client_id Description: Client ID key, to be used for obtaining
 Returns: Application, with client_id and client_secret
 OAuth: Public
 Version history:
- 0.0.0 - added 2.7.2 - now returns vapid_key   Request Form Data Parameters client_name required  string  A name for your application   redirect_uris required  string  Where the user should be redirected after authorization. To display the authorization code to the user instead of redirecting to a web page, use urn:ietf:wg:oauth:2.</description>
+0.0.0 - added
+2.7.2 - now returns vapid_key
+ Request Form Data Parameters client_name required  string  A name for your application   redirect_uris required  string  Where the user should be redirected after authorization. To display the authorization code to the user instead of redirecting to a web page, use urn:ietf:wg:oauth:2.</description>
     </item>
     
     <item>
@@ -198,6 +201,17 @@ Overview Things that need to be backed up in order of importance:
     </item>
     
     <item>
+      <title>Bearcaps</title>
+      <link>http://docs.joinmastodon.org/spec/bearcaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/spec/bearcaps/</guid>
+      <description>What are bearcaps? In certain cases, resources may not be publically available and may require a token to successfully fetch them. This is typically done by using an HTTP Authorization header containing a Bearer token, like so:
+GET https://example.com/foo Authorization: Bearer &amp;lt;token&amp;gt; Bearcaps allow for a way to link to a resource with the token included, like so:
+bear:?t=&amp;lt;token&amp;gt;&amp;amp;u=https://example.com/foo&#39; To translate a bearcap to an HTTP request, simply make a request to the u parameter and attach the t parameter as a Bearer token in the Authorization header.</description>
+    </item>
+    
+    <item>
       <title>blocks</title>
       <link>http://docs.joinmastodon.org/methods/accounts/blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -206,7 +220,8 @@ Overview Things that need to be backed up in order of importance:
       <description>get  Blocked users  /api/v1/blocks   Returns: Array of Account
 OAuth: User token + read:blocks
 Version history:
- 0.0.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters max_id optional  string  Internal parameter. Use HTTP Link header for pagination instead.   since_id optional  string  Internal parameter. Use HTTP Link header for pagination instead.</description>
+0.0.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters max_id optional  string  Internal parameter. Use HTTP Link header for pagination instead.   since_id optional  string  Internal parameter. Use HTTP Link header for pagination instead.   limit optional  string  Maximum number of results.</description>
     </item>
     
     <item>
@@ -219,7 +234,8 @@ Version history:
 Returns: Array of Status
 OAuth: User token + read:bookmarks
 Version history:
- 3.1.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string    max_id optional  string    since_id optional  string    min_id optional  string      Response   200: Success         </description>
+3.1.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string    max_id optional  string    since_id optional  string    min_id optional  string      Response   200: Success         </description>
     </item>
     
     <item>
@@ -296,7 +312,8 @@ Version history: Added in 2.</description>
       <description>get  Show conversation  https://mastodon.example/api/v1/conversations   Returns: Array of Conversation
 OAuth: User token + read:statuses
 Version history:
- 2.6.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string  Maximum number of results. Defaults to 20. Max 40.   max_id optional  string  Return results older than this ID. Use HTTP Link header to paginate.</description>
+2.6.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string  Maximum number of results. Defaults to 20. Max 40.   max_id optional  string  Return results older than this ID. Use HTTP Link header to paginate.</description>
     </item>
     
     <item>
@@ -309,7 +326,9 @@ Version history:
 Returns: Array of Emoji
 OAuth: Public
 Version history:
- 2.0.0 - added 3.0.0 - optional category added to response   Request Response   200: Success   Sample response from mastodon.social  [ { &amp;#34;shortcode&amp;#34;: &amp;#34;aaaa&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;https://files.mastodon.social/custom_emojis/images/000/007/118/original/aaaa.png&amp;#34;, &amp;#34;static_url&amp;#34;: &amp;#34;https://files.mastodon.social/custom_emojis/images/000/007/118/static/aaaa.png&amp;#34;, &amp;#34;visible_in_picker&amp;#34;: true }, { &amp;#34;shortcode&amp;#34;: &amp;#34;AAAAAA&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;https://files.mastodon.social/custom_emojis/images/000/071/387/original/AAAAAA.png&amp;#34;, &amp;#34;static_url&amp;#34;: &amp;#34;https://files.mastodon.social/custom_emojis/images/000/071/387/static/AAAAAA.png&amp;#34;, &amp;#34;visible_in_picker&amp;#34;: true }, // [.</description>
+2.0.0 - added
+3.0.0 - optional category added to response
+ Request Response   200: Success   Sample response from mastodon.social  [ { &amp;#34;shortcode&amp;#34;: &amp;#34;aaaa&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;https://files.mastodon.social/custom_emojis/images/000/007/118/original/aaaa.png&amp;#34;, &amp;#34;static_url&amp;#34;: &amp;#34;https://files.mastodon.social/custom_emojis/images/000/007/118/static/aaaa.png&amp;#34;, &amp;#34;visible_in_picker&amp;#34;: true }, { &amp;#34;shortcode&amp;#34;: &amp;#34;AAAAAA&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;https://files.mastodon.social/custom_emojis/images/000/071/387/original/AAAAAA.png&amp;#34;, &amp;#34;static_url&amp;#34;: &amp;#34;https://files.mastodon.social/custom_emojis/images/000/071/387/static/AAAAAA.png&amp;#34;, &amp;#34;visible_in_picker&amp;#34;: true }, // [.</description>
     </item>
     
     <item>
@@ -343,7 +362,8 @@ Locale data and collation Textual values in the database, such as usernames, or 
 Returns: Array of Account
 OAuth: Public
 Version history:
- 3.0.0 - added   Request Query Parameters offset optional  string  How many accounts to skip before returning results. Default 0.   limit optional  string  How many accounts to load. Default 40.   order optional  string  active to sort by most recently posted statuses (default) or new to sort by most recently created profiles.</description>
+3.0.0 - added
+ Request Query Parameters offset optional  string  How many accounts to skip before returning results. Default 0.   limit optional  string  How many accounts to load. Default 40.   order optional  string  active to sort by most recently posted statuses (default) or new to sort by most recently created profiles.</description>
     </item>
     
     <item>
@@ -356,7 +376,8 @@ Version history:
 Returns: Array of strings
 OAuth: User token + read:blocks or follow
 Version:
- 1.4.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters max_id optional  string  Internal parameter. Use HTTP Link header from response for pagination.   since_id optional  string  Internal parameter.</description>
+1.4.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters max_id optional  string  Internal parameter. Use HTTP Link header from response for pagination.   since_id optional  string  Internal parameter.</description>
     </item>
     
     <item>
@@ -387,7 +408,8 @@ visible_in_picker Description: Whether this Emoji should be visible in the picke
 Returns: Array of Account
 OAuth: User token + read:accounts
 Version history:
- 2.5.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string  Maximum number of results to return. Defaults to 40.   max_id optional  string  Internal parameter.</description>
+2.5.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string  Maximum number of results to return. Defaults to 40.   max_id optional  string  Internal parameter.</description>
     </item>
     
     <item>
@@ -409,7 +431,9 @@ Version history:
 Returns: Array of Status
 OAuth: User token + read:favourites
 Version:
- 0.0.0 - added 2.6.0 - min_id added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string    min_id optional  string  Internal parameter. Use HTTP Link header for pagination instead.   max_id optional  string  Internal parameter.</description>
+0.0.0 - added
+2.6.0 - min_id added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string    min_id optional  string  Internal parameter. Use HTTP Link header for pagination instead.   max_id optional  string  Internal parameter.</description>
     </item>
     
     <item>
@@ -421,7 +445,8 @@ Version:
       <description>get  View your featured tags  https://mastodon.example/api/v1/featured_tags   Returns: Array of FeaturedTag
 OAuth: User token + read:accounts
 Version history:
- 3.0.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;     Response   200: Success    [ { &amp;#34;id&amp;#34;: &amp;#34;627&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;nowplaying&amp;#34;, &amp;#34;statuses_count&amp;#34;: 36, &amp;#34;last_status_at&amp;#34;: &amp;#34;2019-11-15T07:14:43.524Z&amp;#34; } ]    401: Unauthorized   Invalid or missing Authorization header  { &amp;#34;error&amp;#34;: &amp;#34;The access token is invalid&amp;#34; }      post  Feature a tag  https://mastodon.</description>
+3.0.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;     Response   200: Success    [ { &amp;#34;id&amp;#34;: &amp;#34;627&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;nowplaying&amp;#34;, &amp;#34;statuses_count&amp;#34;: 36, &amp;#34;last_status_at&amp;#34;: &amp;#34;2019-11-15T07:14:43.524Z&amp;#34; } ]    401: Unauthorized   Invalid or missing Authorization header  { &amp;#34;error&amp;#34;: &amp;#34;The access token is invalid&amp;#34; }      post  Feature a tag  https://mastodon.</description>
     </item>
     
     <item>
@@ -436,9 +461,7 @@ Version history: Added in 3.0.0
 name Description: The name of the hashtag being featured.
 Type: String
 Version history: Added in 3.0.0
-statuses_count Description: The number of authored statuses containing this hashtag.
-Type: Number
-Version history: Added in 3.</description>
+url Description: A link to all statuses by a user that contain this hashtag.</description>
     </item>
     
     <item>
@@ -474,7 +497,8 @@ context Description: The contexts in which the filter should be applied.</descri
       <description>get  View all filters  https://mastodon.example/api/v1/filters   Returns: Filter
 OAuth: User token + read:filters
 Version history:
- 2.4.3 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;     Response   200: Success   Excerpts of various filters in different contexts.  [ { &amp;#34;id&amp;#34;: &amp;#34;6191&amp;#34;, &amp;#34;phrase&amp;#34;: &amp;#34;:eurovision2019:&amp;#34;, &amp;#34;context&amp;#34;: [ &amp;#34;home&amp;#34; ], &amp;#34;whole_word&amp;#34;: true, &amp;#34;expires_at&amp;#34;: &amp;#34;2019-05-21T13:47:31.333Z&amp;#34;, &amp;#34;irreversible&amp;#34;: false }, .</description>
+2.4.3 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;     Response   200: Success   Excerpts of various filters in different contexts.  [ { &amp;#34;id&amp;#34;: &amp;#34;6191&amp;#34;, &amp;#34;phrase&amp;#34;: &amp;#34;:eurovision2019:&amp;#34;, &amp;#34;context&amp;#34;: [ &amp;#34;home&amp;#34; ], &amp;#34;whole_word&amp;#34;: true, &amp;#34;expires_at&amp;#34;: &amp;#34;2019-05-21T13:47:31.333Z&amp;#34;, &amp;#34;irreversible&amp;#34;: false }, ... { &amp;#34;id&amp;#34;: &amp;#34;5580&amp;#34;, &amp;#34;phrase&amp;#34;: &amp;#34;@twitter.</description>
     </item>
     
     <item>
@@ -486,7 +510,8 @@ Version history:
       <description>get  Pending Follows  https://mastodon.example/api/v1/follow_requests   Returns: Array of Account
 OAuth: User token + read:follows or follow
 Version history:
- 0.0.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string  Maximum number of results to return. Defaults to 40. Paginate using the HTTP Link header.     Response   200: Success   Accounts that are requesting a follow  Link: &amp;lt;https://mastodon.</description>
+0.0.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string  Maximum number of results to return. Defaults to 40. Paginate using the HTTP Link header.     Response   200: Success   Accounts that are requesting a follow  Link: &amp;lt;https://mastodon.</description>
     </item>
     
     <item>
@@ -605,7 +630,10 @@ Node.js curl -sL https://deb.nodesource.com/setup_12.x | bash - Yarn curl -sS ht
 Returns: Instance
 OAuth: Public
 Version history:
- 1.1.0 - added 3.0.0 - requires user token if instance is in whitelist mode 3.1.4 - added invites_enabled to response   Request Response   200: Success    &amp;#34;uri&amp;#34;: &amp;#34;mastodon.social&amp;#34;, &amp;#34;title&amp;#34;: &amp;#34;Mastodon&amp;#34;, &amp;#34;short_description&amp;#34;: &amp;#34;Server run by the main developers of the project &amp;lt;img draggable=\&amp;#34;false\&amp;#34; alt=\&amp;#34;🐘\&amp;#34; class=\&amp;#34;emojione\&amp;#34; src=\&amp;#34;https://mastodon.social/emoji/1f418.svg\&amp;#34; /&amp;gt; It is not focused on any particular niche interest - everyone is welcome as long as you follow our code of conduct!</description>
+1.1.0 - added
+3.0.0 - requires user token if instance is in whitelist mode
+3.1.4 - added invites_enabled to response
+ Request Response   200: Success    &amp;#34;uri&amp;#34;: &amp;#34;mastodon.social&amp;#34;, &amp;#34;title&amp;#34;: &amp;#34;Mastodon&amp;#34;, &amp;#34;short_description&amp;#34;: &amp;#34;Server run by the main developers of the project &amp;lt;img draggable=\&amp;#34;false\&amp;#34; alt=\&amp;#34;🐘\&amp;#34; class=\&amp;#34;emojione\&amp;#34; src=\&amp;#34;https://mastodon.social/emoji/1f418.svg\&amp;#34; /&amp;gt; It is not focused on any particular niche interest - everyone is welcome as long as you follow our code of conduct!</description>
     </item>
     
     <item>
@@ -625,11 +653,15 @@ Version history:
       <guid>http://docs.joinmastodon.org/entities/list/</guid>
       <description>Example { &amp;#34;id&amp;#34;: &amp;#34;12249&amp;#34;, &amp;#34;title&amp;#34;: &amp;#34;Friends&amp;#34; } Required attributes id Description: The internal database ID of the list.
 Type: String (cast from an integer, but not guaranteed to be a number)
-Version history: Added in 2.1.0
+Version history:
+2.1.0 - added
 title Description: The user-defined title of the list.
 Type: String
-Version history: Added in 2.1.0
-See also  lists   app/serializers/rest/list_serializer.rb  </description>
+Version history:
+2.1.0 - added
+replies_policy Description: The user-defined title of the list.
+Type: String (Enumerable oneOf)
+followed = Show replies to any followed user</description>
     </item>
     
     <item>
@@ -642,7 +674,8 @@ See also  lists   app/serializers/rest/list_serializer.rb  </description>
 Returns: Array of List
 OAuth: User token + read:lists
 Version history:
- 2.1.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;     Response   200: Success   Use id as a parameter for related API calls.  [ { &amp;#34;id&amp;#34;: &amp;#34;12249&amp;#34;, &amp;#34;title&amp;#34;: &amp;#34;Friends&amp;#34; } ]    401: Unauthorized   Invalid or missing Authorization header  { &amp;#34;error&amp;#34;: &amp;#34;The access token is invalid&amp;#34; }      get  Show a single list  https://mastodon.</description>
+2.1.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;     Response   200: Success   Use id as a parameter for related API calls.  [ { &amp;#34;id&amp;#34;: &amp;#34;12249&amp;#34;, &amp;#34;title&amp;#34;: &amp;#34;Friends&amp;#34;, &amp;#34;replies_policy&amp;#34;: &amp;#34;followed&amp;#34; }, { &amp;#34;id&amp;#34;: &amp;#34;13585&amp;#34;, &amp;#34;title&amp;#34;: &amp;#34;test&amp;#34;, &amp;#34;replies_policy&amp;#34;: &amp;#34;list&amp;#34; } ]    401: Unauthorized   Invalid or missing Authorization header  { &amp;#34;error&amp;#34;: &amp;#34;The access token is invalid&amp;#34; }      get  Show a single list  https://mastodon.</description>
     </item>
     
     <item>
@@ -679,7 +712,8 @@ Nested attributes last_read_id Description: The ID of the most recently viewed e
       <description>get  Get saved timeline position  https://mastodon.example/api/v1/markers   Returns: Marker
 OAuth: User token + read:statuses
 Version history:
- 3.0.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters timeline required  array  Array of markers to fetch. String enum anyOf home, notifications. If not provided, an empty object will be returned.     Response   200: Success   timeline[] = [&amp;ldquo;home&amp;rdquo;, &amp;ldquo;notifications&amp;rdquo;]  { &amp;#34;notifications&amp;#34;: { &amp;#34;last_read_id&amp;#34;: &amp;#34;35098814&amp;#34;, &amp;#34;version&amp;#34;: 361, &amp;#34;updated_at&amp;#34;: &amp;#34;2019-11-26T22:37:25.</description>
+3.0.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters timeline required  array  Array of markers to fetch. String enum anyOf home, notifications. If not provided, an empty object will be returned.     Response   200: Success   timeline[] = [&amp;ldquo;home&amp;rdquo;, &amp;ldquo;notifications&amp;rdquo;]  { &amp;#34;notifications&amp;#34;: { &amp;#34;last_read_id&amp;#34;: &amp;#34;35098814&amp;#34;, &amp;#34;version&amp;#34;: 361, &amp;#34;updated_at&amp;#34;: &amp;#34;2019-11-26T22:37:25.</description>
     </item>
     
     <item>
@@ -769,7 +803,8 @@ Disable login A Mastodon account can be disabled. This prevents the user from do
 Returns: Array of Account
 OAuth: User token + read:mutes or follow
 Version history:
- 0.0.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Form Data Parameters limit optional  string  Maximum number of results to return per page. Defaults to 40.   max_id optional  string  Internal parameter.</description>
+0.0.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Form Data Parameters limit optional  string  Maximum number of results to return per page. Defaults to 40.   max_id optional  string  Internal parameter.</description>
     </item>
     
     <item>
@@ -847,7 +882,8 @@ This is where OAuth comes in. OAuth is a mechanism for generating access tokens 
       <description>get  OEmbed as JSON  https://mastodon.example/api/oembed   Returns: OEmbed metadata
 OAuth: Public
 Version history:
- 1.0.0 - added   Request Query Parameters url required  string  URL of a status   maxwidth optional  number  width of the iframe. Defaults to 400   maxheight optional  number  height of the iframe. Defaults to null     Response   200: Success   Represents OEmbed &amp;ldquo;rich&amp;rdquo; preview, with associated iframe and metadata.</description>
+1.0.0 - added
+ Request Query Parameters url required  string  URL of a status   maxwidth optional  number  width of the iframe. Defaults to 400   maxheight optional  number  height of the iframe. Defaults to null     Response   200: Success   Represents OEmbed &amp;ldquo;rich&amp;rdquo; preview, with associated iframe and metadata.</description>
     </item>
     
     <item>
@@ -881,7 +917,8 @@ expires_at Description: When the poll ends.</description>
       <description>get  View a poll  https://mastodon.example/api/v1/polls/:id   Returns: Poll
 OAuth: Public if parent status is public. User token + read:statuses if parent status is private.
 Version history:
- 2.8.0 - added   Request Path Parameters :id required  string  ID of the poll in the database     Response   200: Success    { &amp;#34;id&amp;#34;: &amp;#34;34830&amp;#34;, &amp;#34;expires_at&amp;#34;: &amp;#34;2019-12-05T04:05:08.302Z&amp;#34;, &amp;#34;expired&amp;#34;: true, &amp;#34;multiple&amp;#34;: false, &amp;#34;votes_count&amp;#34;: 10, &amp;#34;voters_count&amp;#34;: null, &amp;#34;voted&amp;#34;: true, &amp;#34;own_votes&amp;#34;: [ 1 ], &amp;#34;options&amp;#34;: [ { &amp;#34;title&amp;#34;: &amp;#34;accept&amp;#34;, &amp;#34;votes_count&amp;#34;: 6 }, { &amp;#34;title&amp;#34;: &amp;#34;deny&amp;#34;, &amp;#34;votes_count&amp;#34;: 4 } ], &amp;#34;emojis&amp;#34;: [] }    404: Not Found   Poll does not exist, or poll&amp;rsquo;s parent status is private  { &amp;#34;error&amp;#34;: &amp;#34;Record not found&amp;#34; }      post  Vote on a poll  https://mastodon.</description>
+2.8.0 - added
+ Request Path Parameters :id required  string  ID of the poll in the database     Response   200: Success    { &amp;#34;id&amp;#34;: &amp;#34;34830&amp;#34;, &amp;#34;expires_at&amp;#34;: &amp;#34;2019-12-05T04:05:08.302Z&amp;#34;, &amp;#34;expired&amp;#34;: true, &amp;#34;multiple&amp;#34;: false, &amp;#34;votes_count&amp;#34;: 10, &amp;#34;voters_count&amp;#34;: null, &amp;#34;voted&amp;#34;: true, &amp;#34;own_votes&amp;#34;: [ 1 ], &amp;#34;options&amp;#34;: [ { &amp;#34;title&amp;#34;: &amp;#34;accept&amp;#34;, &amp;#34;votes_count&amp;#34;: 6 }, { &amp;#34;title&amp;#34;: &amp;#34;deny&amp;#34;, &amp;#34;votes_count&amp;#34;: 4 } ], &amp;#34;emojis&amp;#34;: [] }    404: Not Found   Poll does not exist, or poll&amp;rsquo;s parent status is private  { &amp;#34;error&amp;#34;: &amp;#34;Record not found&amp;#34; }      post  Vote on a poll  https://mastodon.</description>
     </item>
     
     <item>
@@ -925,7 +962,8 @@ posting:default:language Description: Default language for new posts.</descripti
 Returns: Preferences by key and value
 OAuth: User token + read:accounts
 Version history:
- 2.8.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;     Response   200: Success    { &amp;#34;posting:default:visibility&amp;#34;: &amp;#34;public&amp;#34;, &amp;#34;posting:default:sensitive&amp;#34;: false, &amp;#34;posting:default:language&amp;#34;: null, &amp;#34;reading:expand:media&amp;#34;: &amp;#34;default&amp;#34;, &amp;#34;reading:expand:spoilers&amp;#34;: false }    401: Unauthorized   Incorrect Authorization header  { &amp;#34;error&amp;#34;: &amp;#34;The access token is invalid&amp;#34; }     </description>
+2.8.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;     Response   200: Success    { &amp;#34;posting:default:visibility&amp;#34;: &amp;#34;public&amp;#34;, &amp;#34;posting:default:sensitive&amp;#34;: false, &amp;#34;posting:default:language&amp;#34;: null, &amp;#34;reading:expand:media&amp;#34;: &amp;#34;default&amp;#34;, &amp;#34;reading:expand:spoilers&amp;#34;: false }    401: Unauthorized   Incorrect Authorization header  { &amp;#34;error&amp;#34;: &amp;#34;The access token is invalid&amp;#34; }     </description>
     </item>
     
     <item>
@@ -957,7 +995,8 @@ Do not allow password-based SSH login (keys only) First make sure you are actual
       <description>get  View identity proof  https://mastodon.example/api/proofs   Returns: custom response defined by provider
 OAuth: Public
 Version history:
- 2.8.0 - added   Request Query Parameters provider optional  string  The identity provider to be looked up. Currently only supports keybase (case-sensitive)   username optional  string  The username on the selected identity provider     Response   200: Success   gargron on keybase  { &amp;#34;avatar&amp;#34;: &amp;#34;https://files.</description>
+2.8.0 - added
+ Request Query Parameters provider optional  string  The identity provider to be looked up. Currently only supports keybase (case-sensitive)   username optional  string  The username on the selected identity provider     Response   200: Success   gargron on keybase  { &amp;#34;avatar&amp;#34;: &amp;#34;https://files.</description>
     </item>
     
     <item>
@@ -1010,7 +1049,7 @@ Version history: Added in 2.4.0</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.joinmastodon.org/entities/relationship/</guid>
-      <description>Example { &amp;#34;id&amp;#34;: &amp;#34;1&amp;#34;, &amp;#34;following&amp;#34;: true, &amp;#34;showing_reblogs&amp;#34;: true, &amp;#34;followed_by&amp;#34;: true, &amp;#34;blocking&amp;#34;: false, &amp;#34;blocked_by&amp;#34;: false, &amp;#34;muting&amp;#34;: false, &amp;#34;muting_notifications&amp;#34;: false, &amp;#34;requested&amp;#34;: false, &amp;#34;domain_blocking&amp;#34;: false, &amp;#34;endorsed&amp;#34;: false, &amp;#34;note&amp;#34;: &amp;#34;&amp;#34; } Required attributes id Description: The account id.
+      <description>Example { &amp;#34;id&amp;#34;: &amp;#34;1&amp;#34;, &amp;#34;following&amp;#34;: true, &amp;#34;showing_reblogs&amp;#34;: true, &amp;#34;notifying&amp;#34;: false, &amp;#34;followed_by&amp;#34;: true, &amp;#34;blocking&amp;#34;: false, &amp;#34;blocked_by&amp;#34;: false, &amp;#34;muting&amp;#34;: false, &amp;#34;muting_notifications&amp;#34;: false, &amp;#34;requested&amp;#34;: false, &amp;#34;domain_blocking&amp;#34;: false, &amp;#34;endorsed&amp;#34;: false, &amp;#34;note&amp;#34;: &amp;#34;&amp;#34; } Required attributes id Description: The account id.
 Type: String (cast from an integer, but not guaranteed to be a number)
 Version history:
 0.6.0 - added
@@ -1040,7 +1079,8 @@ requested Description: Do you have a pending follow request for this user?</desc
 OAuth: User token + write:reports
 Version history:
 1.1 - added
- 2.3.0 - add forward parameter   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Form Data Parameters account_id required  string  ID of the account to report   status_ids optional  array  Array of Statuses to attach to the report, for context   comment optional  string  Reason for the report (default max 1000 characters)   forward optional  boolean  If the account is remote, should the report be forwarded to the remote admin?</description>
+2.3.0 - add forward parameter
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Form Data Parameters account_id required  string  ID of the account to report   status_ids optional  array  Array of Statuses to attach to the report, for context   comment optional  string  Reason for the report (default max 1000 characters)   forward optional  boolean  If the account is remote, should the report be forwarded to the remote admin?</description>
     </item>
     
     <item>
@@ -1091,7 +1131,8 @@ How routes are constructed namespace is a prefix for routes mapped to a certain 
       <description>get  View scheduled statuses  https://mastodon.example/api/v1/scheduled_statuses   Returns: Array of ScheduledStatus
 OAuth: User token + read:statuses
 Version history:
- 2.7.0 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  number  Max number of results to return. Defaults to 20.   max_id optional  string  Return results older than ID   since_id optional  string  Return results newer than ID   min_id optional  string  Return results immediately newer than ID     Response   200: Success    [ { &amp;#34;id&amp;#34;: &amp;#34;3221&amp;#34;, &amp;#34;scheduled_at&amp;#34;: &amp;#34;2019-12-05T12:33:01.</description>
+2.7.0 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  number  Max number of results to return. Defaults to 20.   max_id optional  string  Return results older than ID   since_id optional  string  Return results newer than ID   min_id optional  string  Return results immediately newer than ID     Response   200: Success    [ { &amp;#34;id&amp;#34;: &amp;#34;3221&amp;#34;, &amp;#34;scheduled_at&amp;#34;: &amp;#34;2019-12-05T12:33:01.</description>
     </item>
     
     <item>
@@ -1114,7 +1155,10 @@ Version history: Added in 2.</description>
       <description>get  Search results  https://mastodon.example/api/v2/search   Returns: Results
 OAuth: User token + read:search
 Version history:
- 2.4.1 - added, limit hardcoded to 5 2.8.0 - add type, limit, offset, min_id, max_id, account_id 3.0.0 - add exclude_unreviewed param   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters account_id optional  string  If provided, statuses returned will be authored only by this account   max_id optional  string  Return results older than this id   min_id optional  string  Return results immediately newer than this id   type optional  string  Enum(accounts, hashtags, statuses)   exclude_unreviewed optional  boolean  Filter out unreviewed tags?</description>
+2.4.1 - added, limit hardcoded to 5
+2.8.0 - add type, limit, offset, min_id, max_id, account_id
+3.0.0 - add exclude_unreviewed param
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters account_id optional  string  If provided, statuses returned will be authored only by this account   max_id optional  string  Return results older than this id   min_id optional  string  Return results immediately newer than this id   type optional  string  Enum(accounts, hashtags, statuses)   exclude_unreviewed optional  boolean  Filter out unreviewed tags?</description>
     </item>
     
     <item>
@@ -1218,7 +1262,10 @@ Bio Your bio is a short description of yourself that is displayed as a note on y
 Returns: Status. When scheduled_at is present, ScheduledStatus is returned instead.
 OAuth: User + write:statuses
 Version history:
- 0.0.0 - added 2.7.0 - scheduled_at added 2.8.0 - poll added   Request Headers Idempotency-Key optional  string  Prevent duplicate submissions of the same status. Idempotency keys are stored for up to 1 hour, and can be any arbitrary string.</description>
+0.0.0 - added
+2.7.0 - scheduled_at added
+2.8.0 - poll added
+ Request Headers Idempotency-Key optional  string  Prevent duplicate submissions of the same status. Idempotency keys are stored for up to 1 hour, and can be any arbitrary string.</description>
     </item>
     
     <item>
@@ -1243,7 +1290,8 @@ GET /api/v1/streaming/user Returns events that are relevant to the authorized us
 Returns: Array of Account
 OAuth: User token + read
 Version history:
- 2.4.3 - added   Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string  Maximum number of results to return. Defaults to 40.     Response   200: Success   Sample call with limit=2  [ { &amp;#34;id&amp;#34;: &amp;#34;332766&amp;#34;, &amp;#34;username&amp;#34;: &amp;#34;kaniini&amp;#34;, &amp;#34;acct&amp;#34;: &amp;#34;kaniini@pleroma.</description>
+2.4.3 - added
+ Request Headers Authorization required  string  Bearer &amp;lt;user token&amp;gt;    Query Parameters limit optional  string  Maximum number of results to return. Defaults to 40.     Response   200: Success   Sample call with limit=2  [ { &amp;#34;id&amp;#34;: &amp;#34;332766&amp;#34;, &amp;#34;username&amp;#34;: &amp;#34;kaniini&amp;#34;, &amp;#34;acct&amp;#34;: &amp;#34;kaniini@pleroma.</description>
     </item>
     
     <item>
@@ -1274,7 +1322,13 @@ The best way of working with Mastodon in a development environment is installing
       <description>get  Public timeline  https://mastodon.example/api/v1/timelines/public   Returns: Array of Status
 OAuth: Public. Requires app token + read:statuses if the instance has disabled public preview.
 Version history:
- 0.0.0 - added 2.3.0 - added only_media 2.6.0 - add min_id 3.0.0 - auth is required if public preview is disabled 3.1.4 - added remote   Request Query Parameters local optional  boolean  Show only local statuses? Defaults to false.</description>
+0.0.0 - added
+2.3.0 - added only_media
+2.6.0 - add min_id
+3.0.0 - auth is required if public preview is disabled
+3.1.4 - added remote
+3.3.0 - both min_id and max_id can be used at the same time now
+ Request Query Parameters local optional  boolean  Show only local statuses?</description>
     </item>
     
     <item>
@@ -1305,7 +1359,8 @@ created_at Description: When the token was generated.</description>
 Returns: Array of Tag with History
 OAuth: Public
 Version history:
- 3.0.0 - added   Request Query Parameters limit optional  number  Maximum number of results to return. Defaults to 10.     Response   200: Success    [ { &amp;#34;name&amp;#34;: &amp;#34;hola&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;https://mastodon.</description>
+3.0.0 - added
+ Request Query Parameters limit optional  number  Maximum number of results to return. Defaults to 10.     Response   200: Success    [ { &amp;#34;name&amp;#34;: &amp;#34;hola&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;https://mastodon.social/tags/hola&amp;#34;, &amp;#34;history&amp;#34;: [ { &amp;#34;day&amp;#34;: &amp;#34;1574726400&amp;#34;, &amp;#34;uses&amp;#34;: &amp;#34;13&amp;#34;, &amp;#34;accounts&amp;#34;: &amp;#34;10&amp;#34; }, .</description>
     </item>
     
     <item>

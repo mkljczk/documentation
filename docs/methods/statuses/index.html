@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -854,12 +850,10 @@
 <p>Post a new status.</p>
 <p><strong>Returns:</strong> Status. When <code>scheduled_at</code> is present, ScheduledStatus is returned instead.<br>
 <strong>OAuth:</strong> User + <code>write:statuses</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-<li>2.7.0 - <code>scheduled_at</code> added</li>
-<li>2.8.0 - <code>poll</code> added</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added<br>
+2.7.0 - <code>scheduled_at</code> added<br>
+2.8.0 - <code>poll</code> added</p>
 <p></div>
 
 <div class="tabs">
@@ -1186,11 +1180,9 @@ ISO 639 language code for this status.
 <p>View information about a status.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> Public for public statuses, user token + <code>read:statuses</code> for private statuses<br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-<li>2.7.0 - public statuses no longer require token</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added<br>
+2.7.0 - public statuses no longer require token</p>
 <p></div>
 
 <div class="tabs">
@@ -1373,11 +1365,9 @@ Bearer &lt;user token&gt;
 <p>Delete one of your own statuses.</p>
 <p><strong>Returns:</strong> Status with source <code>text</code> and <code>media_attachments</code> or <code>poll</code><br>
 <strong>OAuth:</strong> User token + <code>write:statuses</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-<li>2.9.0 - return source properties, for use with delete and redraft</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added<br>
+2.9.0 - return source properties, for use with delete and redraft</p>
 <p></div>
 
 <div class="tabs">
@@ -1642,10 +1632,8 @@ Bearer &lt;user token&gt;
 <p>View statuses above and below this status in the thread.</p>
 <p><strong>Returns:</strong> Context<br>
 <strong>OAuth:</strong> Public for public statuses. User token + <code>read:statuses</code> for private statuses.<br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1786,10 +1774,8 @@ Bearer &lt;user token&gt;
 <p>View who boosted a given status.</p>
 <p><strong>Returns:</strong> Array of Account<br>
 <strong>OAuth:</strong> Public
-Version history:</p>
-<ul>
-<li>0.0.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1884,10 +1870,8 @@ Local ID of a status in the database.
 <p>View who favourited a given status.</p>
 <p><strong>Returns:</strong> Array of Account<br>
 <strong>OAuth:</strong> Public<br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1982,10 +1966,8 @@ Local ID of a status in the database.
 <p>Add a status to your favourites list.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:favourites</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2119,10 +2101,8 @@ Bearer &lt;user token&gt;
 <p>Remove a status from your favourites list.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:favourites</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2257,11 +2237,9 @@ Bearer &lt;user token&gt;
 <p>Reshare a status.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:statuses</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-<li>2.8.0 - add visibility parameter</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added<br>
+2.8.0 - add <code>visibility</code> parameter</p>
 <p></div>
 
 <div class="tabs">
@@ -2428,10 +2406,8 @@ any visibility except limited or direct (i.e. public, unlisted, private). Defaul
 <p>Undo a reshare of a status.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:statuses</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2566,10 +2542,8 @@ Bearer &lt;user token&gt;
 <p>Privately bookmark a status.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:bookmarks</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>3.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+3.1.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2703,10 +2677,8 @@ Bearer &lt;user token&gt;
 <p>Remove a status from your private bookmarks.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:bookmarks</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>3.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+3.1.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2840,10 +2812,8 @@ Bearer &lt;user token&gt;
 <p>Do not receive notifications for the thread that this status is part of. Must be a thread in which you are a participant.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:mutes</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>1.4.2 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+1.4.2 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2977,10 +2947,8 @@ Bearer &lt;user token&gt;
 <p>Start receiving notifications again for the thread that this status is part of.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:mutes</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>1.4.2 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+1.4.2 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -3114,10 +3082,8 @@ Bearer &lt;user token&gt;
 <p>Feature one of your own public statuses at the top of your profile.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>1.6.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+1.6.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -3294,10 +3260,8 @@ Bearer &lt;user token&gt;
 <p>Unfeature a status from the top of your profile.</p>
 <p><strong>Returns:</strong> Status<br>
 <strong>OAuth:</strong> User token + <code>write:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>1.6.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+1.6.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -3441,12 +3405,10 @@ Bearer &lt;user token&gt;
 </p>
 <p><strong>Returns:</strong> Card<br>
 <strong>OAuth:</strong> Public<br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-<li>2.6.0 - deprecated in favor of card property inlined on Status entity</li>
-<li>3.0.0 - removed</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added<br>
+2.6.0 - deprecated in favor of card property inlined on Status entity<br>
+3.0.0 - removed</p>
 <p></div>
 
 <div class="tabs">
@@ -3532,7 +3494,7 @@ ID of the status in the database
 
 
     <p style="color: #687590;">
-      Last updated January 1, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5cstatuses.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5cstatuses.md' style="color: #687590;">Improve this page</a>
 
       
     </p>

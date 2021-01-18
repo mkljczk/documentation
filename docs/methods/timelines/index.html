@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -845,14 +841,13 @@
 </p>
 <p><strong>Returns:</strong> Array of Status<br>
 <strong>OAuth:</strong> Public. Requires app token + <code>read:statuses</code> if the instance has disabled public preview.<br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-<li>2.3.0 - added <code>only_media</code></li>
-<li>2.6.0 - add <code>min_id</code></li>
-<li>3.0.0 - auth is required if public preview is disabled</li>
-<li>3.1.4 - added <code>remote</code></li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added<br>
+2.3.0 - added <code>only_media</code><br>
+2.6.0 - add <code>min_id</code><br>
+3.0.0 - auth is required if public preview is disabled<br>
+3.1.4 - added <code>remote</code><br>
+3.3.0 - both <code>min_id</code> and <code>max_id</code> can be used at the same time now</p>
 <p></div>
 
 <div class="tabs">
@@ -1035,13 +1030,12 @@ Maximum number of results to return. Defaults to 20.
 <p>View public statuses containing the given hashtag.</p>
 <p><strong>Returns:</strong> Array of Status<br>
 <strong>OAuth:</strong> Public. Requires app token + <code>read:statuses</code> if the instance has disabled public preview.<br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-<li>2.3.0 - added <code>only_media</code></li>
-<li>2.6.0 - add <code>min_id</code></li>
-<li>3.0.0 - auth is required if public preview is disabled</li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added<br>
+2.3.0 - added <code>only_media</code><br>
+2.6.0 - add <code>min_id</code><br>
+3.0.0 - auth is required if public preview is disabled<br>
+3.3.0 - both <code>min_id</code> and <code>max_id</code> can be used at the same time now</p>
 <p></div>
 
 <div class="tabs">
@@ -1267,11 +1261,10 @@ Maximum number of results to return. Defaults to 20.
 <p>View statuses from followed users.</p>
 <p><strong>Returns:</strong> Array of Status<br>
 <strong>OAuth:</strong> User + <code>read:statuses</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>0.0.0 - added</li>
-<li>2.6.0 - add <code>min_id</code></li>
-</ul>
+<strong>Version history:</strong><br>
+0.0.0 - added<br>
+2.6.0 - add <code>min_id</code><br>
+3.3.0 - both <code>min_id</code> and <code>max_id</code> can be used at the same time now</p>
 <p></div>
 
 <div class="tabs">
@@ -1464,11 +1457,10 @@ Return only local statuses?
 <p>View statuses in the given list timeline.</p>
 <p><strong>Returns:</strong> Array of Status<br>
 <strong>OAuth:</strong> User token + <code>read:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-<li>2.6.0 - add <code>min_id</code></li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added<br>
+2.6.0 - add <code>min_id</code><br>
+3.3.0 - both <code>min_id</code> and <code>max_id</code> can be used at the same time now</p>
 <p></div>
 
 <div class="tabs">
@@ -1653,11 +1645,9 @@ Maximum number of results to return. Defaults to 20.Return results older than th
 <p><strong>Returns:</strong> Array of Status<br>
 <strong>OAuth:</strong> User token + <code>read:statuses</code><br>
 <strong>Version history:</strong><br>
-x.x.x - added</p>
-<ul>
-<li>2.6.0 - add <code>min_id</code>. deprecated in favor of conversations</li>
-<li>3.0.0 - removed</li>
-</ul>
+x.x.x - added<br>
+2.6.0 - add <code>min_id</code>. deprecated in favor of conversations<br>
+3.0.0 - removed</p>
 <p></div>
 
 <div class="tabs">
@@ -1807,7 +1797,7 @@ Return results immediately newer than ID
 
 
     <p style="color: #687590;">
-      Last updated June 30, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5ctimelines.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5ctimelines.md' style="color: #687590;">Improve this page</a>
 
       
     </p>

@@ -4,12 +4,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/entities/account/</loc>
-    <lastmod>2020-08-10T23:01:50+02:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/</loc>
-    <lastmod>2020-07-10T05:28:00-05:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -19,12 +19,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/spec/activitypub/</loc>
-    <lastmod>2020-10-24T22:07:22+02:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/admin/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -39,7 +39,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/admin/</loc>
-    <lastmod>2020-11-30T23:02:07+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -79,7 +79,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/apps/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -103,13 +103,18 @@
   </url>
   
   <url>
+    <loc>http://docs.joinmastodon.org/spec/bearcaps/</loc>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/blocks/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/bookmarks/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -158,7 +163,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/admin/config/</loc>
-    <lastmod>2020-09-23T10:37:10-07:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -183,22 +188,22 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/timelines/conversations/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/instance/custom_emojis/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/admin/troubleshooting/index-corruption/</loc>
-    <lastmod>2020-11-19T21:49:18+01:00</lastmod>
+    <lastmod>2020-12-18T17:53:35+01:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/user/moderating/</loc>
-    <lastmod>2020-11-26T01:48:32+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -228,12 +233,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/instance/directory/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/domain_blocks/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -243,12 +248,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/endorsements/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/entities/</loc>
-    <lastmod>2020-11-26T01:48:32+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -258,17 +263,17 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/favourites/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/featured_tags/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/entities/featuredtag/</loc>
-    <lastmod>2020-01-12T07:11:56-06:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -283,12 +288,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/filters/</loc>
-    <lastmod>2020-08-29T20:40:46-04:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/follow_requests/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -378,7 +383,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/instance/</loc>
-    <lastmod>2020-06-30T20:13:20-05:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -388,12 +393,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/entities/list/</loc>
-    <lastmod>2020-01-12T07:11:56-06:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/timelines/lists/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -408,12 +413,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/timelines/markers/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/statuses/media/</loc>
-    <lastmod>2020-08-10T23:01:50+02:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -423,7 +428,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/</loc>
-    <lastmod>2020-08-29T20:40:46-04:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -448,7 +453,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/admin/moderation/</loc>
-    <lastmod>2020-05-21T02:54:12+08:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -463,7 +468,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/user/contacts/</loc>
-    <lastmod>2020-05-21T02:54:12+08:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -488,7 +493,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/user/moving/</loc>
-    <lastmod>2020-01-12T07:11:56-06:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -513,12 +518,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/mutes/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/entities/notification/</loc>
-    <lastmod>2020-08-10T23:01:50+02:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -533,7 +538,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/apps/oauth/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -548,7 +553,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/oembed/</loc>
-    <lastmod>2020-06-30T19:11:40-05:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -563,12 +568,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/statuses/polls/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/user/posting/</loc>
-    <lastmod>2020-01-12T07:11:56-06:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -598,7 +603,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/preferences/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -618,7 +623,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/user/discoverability/</loc>
-    <lastmod>2020-01-12T07:11:56-06:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -643,7 +648,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/proofs/</loc>
-    <lastmod>2020-06-30T19:11:40-05:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -653,7 +658,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/notifications/push/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -668,7 +673,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/entities/relationship/</loc>
-    <lastmod>2020-08-11T02:14:13+02:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -678,7 +683,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/reports/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -733,7 +738,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/statuses/scheduled_statuses/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -743,17 +748,17 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/search/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/spec/security/</loc>
-    <lastmod>2020-08-10T23:01:50+02:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/user/preferences/</loc>
-    <lastmod>2020-05-21T02:54:12+08:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -798,7 +803,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/user/profile/</loc>
-    <lastmod>2020-01-12T07:11:56-06:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -868,7 +873,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/spec/</loc>
-    <lastmod>2020-10-24T22:07:22+02:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -878,7 +883,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/statuses/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -888,7 +893,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/accounts/suggestions/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -927,7 +932,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/timelines/</loc>
-    <lastmod>2020-06-30T20:13:20-05:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
@@ -937,12 +942,12 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/methods/instance/trends/</loc>
-    <lastmod>2020-01-01T22:37:59+01:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://docs.joinmastodon.org/admin/troubleshooting/</loc>
-    <lastmod>2020-07-02T20:23:31-04:00</lastmod>
+    <lastmod>2020-12-07T17:09:21-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -972,7 +977,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/user/</loc>
-    <lastmod>2020-11-26T01:48:32+01:00</lastmod>
+    <lastmod>2021-01-07T16:22:31+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -997,7 +1002,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/user/external/</loc>
-    <lastmod>2020-01-12T07:11:56-06:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -1022,7 +1027,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/admin/tootctl/</loc>
-    <lastmod>2020-09-27T20:03:14-07:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -1037,7 +1042,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/user/network/</loc>
-    <lastmod>2020-05-21T02:54:12+08:00</lastmod>
+    <lastmod>2021-01-07T16:22:31+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -1067,7 +1072,7 @@
   
   <url>
     <loc>http://docs.joinmastodon.org/</loc>
-    <lastmod>2020-05-21T02:54:12+08:00</lastmod>
+    <lastmod>2020-12-27T00:03:55-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"

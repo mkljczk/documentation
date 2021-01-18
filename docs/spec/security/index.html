@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -848,9 +844,9 @@
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http">Signature: keyId=&#34;https://my-example.com/actor#main-key&#34;,headers=&#34;(request-target) host date&#34;,signature=&#34;Y2FiYW...IxNGRiZDk4ZA==&#34;
 </code></pre></div><p>The three parts of the <code>Signature:</code> header can be broken down like so:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http">Signature:
-keyId=&#34;https://my-example.com/actor#main-key&#34;,
-headers=&#34;(request-target) host date&#34;,
-signature=&#34;Y2FiYW...IxNGRiZDk4ZA==&#34;
+  keyId=&#34;https://my-example.com/actor#main-key&#34;,
+  headers=&#34;(request-target) host date&#34;,
+  signature=&#34;Y2FiYW...IxNGRiZDk4ZA==&#34;
 </code></pre></div><p>The <code>keyId</code> should correspond to the actor and the key being used to generate the <code>signature</code>, whose value is equal to all parameters in <code>headers</code> concatenated together and signed by the key, then Base64-encoded. See <a href="/spec/activitypub/#public-key">ActivityPub &gt; Public key</a> for more information on actor keys. An example key looks like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f1fa8c">&#34;publicKey&#34;</span><span style="color:#ff79c6">:</span> {
     <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;https://my-example.com/actor#main-key&#34;</span>,
@@ -933,7 +929,7 @@ Signature<span style="color:#ff79c6">:</span> keyId=&#34;https://my-example.com/
 
 
     <p style="color: #687590;">
-      Last updated August 10, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/spec%5csecurity.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/spec%5csecurity.md' style="color: #687590;">Improve this page</a>
 
       
     </p>

@@ -35,9 +35,9 @@ Biogram Twój biogram to krótki opis Twojej osoby wyświetlana jako notatka na 
       
       <guid>http://docs.joinmastodon.org/pl/user/external/</guid>
       <description>Zdalne interakcje z innym serwerem Mastodona   Przykład odnośnika bezpośredniego do wpisu na serwerze Mastodona
-  Kiedy odwiedzasz zdalny serwer oparty o Mastodona, kliknięcie dowolnego z przycisków interakcji przeniesie Cię do okna dialogowego, które przekieruje Cię na Twój lokalny serwer.
+  Kiedy odwiedzasz zdalny serwer oparty na Mastodonie, kliknięcie dowolnego z przycisków interakcji przeniesie Cię do okna dialogowego, które przekieruje Cię na Twój lokalny serwer.
   Ekran zdalnej interakcji przy odpowiadaniu na wpis
-  Logowanie się w aplikacji Mastodona Możesz użyć swojego konta na Mastodonie, aby zalogować się w dowolnej aplikacji obsługującej API Mastodona.</description>
+  Logowanie się do aplikacji klienckiej Możesz użyć swojego konta na Mastodonie, aby zalogować się w dowolnej aplikacji obsługującej API Mastodona.</description>
     </item>
     
     <item>
@@ -102,7 +102,7 @@ Odnośniki   Odnośniki muszą zaczynać się od http(s):// i są liczone jako 2
       
       <guid>http://docs.joinmastodon.org/pl/user/contacts/</guid>
       <description>Tworzenie zaproszeń   Zaproś ludzi z ustawień swojego konta
-  Zaproszenia mogą być generowane, aby udostępniać je innym osobom, a niektóre serwery mogą wymagać zaproszenia, aby zarejestrować konto. Przy generowaniu odnośnika zapraszającego, możesz określić maksymalną liczbę użyć odnośnika lub jak długo będzie on aktywny. Odnośniki z zaproszeniami mogą być dezaktywowane w każdym momencie.
+  Zaproszenia mogą być generowane, aby udostępniać je innym osobom, a niektóre serwery mogą wymagać zaproszenia do założenia konta. Przy generowaniu odnośnika zapraszającego, możesz określić maksymalną liczbę użyć odnośnika lub jak długo będzie on aktywny. Odnośniki z zaproszeniami mogą być dezaktywowane w każdym momencie.
 Obserwacje i obserwujący   Wzajemni obserwujący, którzy nie przenieśli konta, sortowani według daty ostatniej aktywności</description>
     </item>
     
@@ -113,7 +113,7 @@ Obserwacje i obserwujący   Wzajemni obserwujący, którzy nie przenieśli konta
       
       <guid>http://docs.joinmastodon.org/pl/user/signup/</guid>
       <description>Wybór serwera Musisz wybrać stronę, na której zarejestrujesz się, tak jakbyś wybierał(-a) dostawcę poczty e-mail lub realm w World of Warcraft dla swojej nowej postaci. Ta strona będzie Twoim dostawcą usługi, hostem dla Twojego konta, Twoim profilem i Twoją stroną główną.
- Możesz przeglądać listę wybranych serwerów według kategorii i języków na joinmastodon.org.  Rozumienie zasad strony Zanim zarejestrujesz się, ważnym jest zapoznanie się z zasadami i regulaminem. Serwer Mastodona ma zwykle zapisane je na stronie /about/more, którą możesz znaleźć, klikając na „dowiedz się więcej” na stronie, którą widzisz, gdy nie jesteś zalogowany(-a).</description>
+ Możesz przeglądać listę wybranych serwerów według kategorii i języków na joinmastodon.org.  Rozumienie zasad strony Zanim zarejestrujesz się, ważnym jest zapoznanie się z zasadami i regulaminem. Serwer Mastodona ma zwykle wypisane je na stronie /about/more, którą możesz znaleźć, klikając na „dowiedz się więcej” na stronie, którą widzisz, gdy nie jesteś zalogowany(-a).</description>
     </item>
     
     <item>

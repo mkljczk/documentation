@@ -16,6 +16,17 @@
     </item>
     
     <item>
+      <title>Bearcaps</title>
+      <link>http://docs.joinmastodon.org/spec/bearcaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.joinmastodon.org/spec/bearcaps/</guid>
+      <description>What are bearcaps? In certain cases, resources may not be publically available and may require a token to successfully fetch them. This is typically done by using an HTTP Authorization header containing a Bearer token, like so:
+GET https://example.com/foo Authorization: Bearer &amp;lt;token&amp;gt; Bearcaps allow for a way to link to a resource with the token included, like so:
+bear:?t=&amp;lt;token&amp;gt;&amp;amp;u=https://example.com/foo&#39; To translate a bearcap to an HTTP request, simply make a request to the u parameter and attach the t parameter as a Bearer token in the Authorization header.</description>
+    </item>
+    
+    <item>
       <title>Microformats</title>
       <link>http://docs.joinmastodon.org/spec/microformats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

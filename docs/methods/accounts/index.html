@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -790,24 +804,6 @@
           
             <li>
               <a href="/entities/token/" class="">Token</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
 
               
             </li>
@@ -1604,7 +1600,8 @@ Profile metadata <code>name</code> and <code>value</code>. (By default, max 4 fi
 <strong>OAuth:</strong> Public<br>
 <strong>Version history:</strong><br>
 0.0.0 - added<br>
-2.4.0 - returns 410 if account is suspended</p>
+2.4.0 - returns 410 if account is suspended<br>
+3.3.0 - returns an Account with <code>suspended: true</code> instead of 410</p>
 <p></div>
 
 <div class="tabs">
@@ -1752,9 +1749,38 @@ The id of the account in the database
     }
   ]
 }
-</code></pre></div><p></div>
+</code></pre></div></div>
 
-</div>
+<div class="tabs-pane">
+  <h5 class="tabs-pane-title">Suspended user</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
+  <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;14&#34;</span>,
+  <span style="color:#f1fa8c">&#34;username&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;stigatle&#34;</span>,
+  <span style="color:#f1fa8c">&#34;acct&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;stigatle@quitter.no&#34;</span>,
+  <span style="color:#f1fa8c">&#34;display_name&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;&#34;</span>,
+  <span style="color:#f1fa8c">&#34;locked&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;bot&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;discoverable&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;group&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;created_at&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;2016-03-18T10:04:51.700Z&#34;</span>,
+  <span style="color:#f1fa8c">&#34;note&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;&#34;</span>,
+  <span style="color:#f1fa8c">&#34;url&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;https://quitter.no/stigatle&#34;</span>,
+  <span style="color:#f1fa8c">&#34;avatar&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;https://mastodon.social/avatars/original/missing.png&#34;</span>,
+  <span style="color:#f1fa8c">&#34;avatar_static&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;https://mastodon.social/avatars/original/missing.png&#34;</span>,
+  <span style="color:#f1fa8c">&#34;header&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;https://mastodon.social/headers/original/missing.png&#34;</span>,
+  <span style="color:#f1fa8c">&#34;header_static&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;https://mastodon.social/headers/original/missing.png&#34;</span>,
+  <span style="color:#f1fa8c">&#34;followers_count&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>,
+  <span style="color:#f1fa8c">&#34;following_count&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>,
+  <span style="color:#f1fa8c">&#34;statuses_count&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>,
+  <span style="color:#f1fa8c">&#34;last_status_at&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>,
+  <span style="color:#f1fa8c">&#34;suspended&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
+  <span style="color:#f1fa8c">&#34;emojis&#34;</span><span style="color:#ff79c6">:</span> [],
+  <span style="color:#f1fa8c">&#34;fields&#34;</span><span style="color:#ff79c6">:</span> []
+}
+</code></pre></div></div>
+
+<p></div>
 
 </div>
 
@@ -2485,8 +2511,103 @@ Maximum number of results to return. Defaults to 40.
 </div>
 
 </div>
+</p>
+<p><div>
+  <h2 class="api-method">
+    <div class="api-method-method">
+      <span>get</span>
+    </div>
+
+    <span class="api-method-title">Featured tags</span>
+  </h2>
+
+  <div class="api-method-url">
+    <span class="api-method-host">https://mastodon.example</span><span class="api-method-path">/api/v1/accounts/:id/featured_tags</span>
+  </div>
 
 <div>
+</p>
+<p>Tags featured by this account.</p>
+<p><strong>Returns:</strong> Array of FeaturedTag<br>
+<strong>OAuth:</strong> User token + <code>read:accounts</code><br>
+<strong>Version history:</strong><br>
+3.3.0 - added</p>
+<p></div>
+
+<div class="tabs">
+
+<div class="tab-pane">
+  <h4 class="tab-pane-title">Request</h4>
+
+<h5 class="api-method-parameters-type">Headers</h5>
+<div class="api-method-parameters-list">
+
+<div class="api-method-parameter">
+  <div class="api-method-parameter-cell api-method-parameter-name">
+    <div>Authorization</div>
+    <div class="api-method-parameter-required">required</div>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-type">
+    <code>string</code>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-description">
+
+Bearer &lt;user token&gt;
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<div class="tab-pane">
+  <h4 class="tab-pane-title">Response</h4>
+
+<div class="api-method-response-example">
+  <h5>
+    <span class="api-method-response-example-indicator"></span>
+    200: Success
+  </h5>
+
+<div>
+
+</div>
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">[
+  {
+    <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;627&#34;</span>,
+    <span style="color:#f1fa8c">&#34;name&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;nowplaying&#34;</span>,
+    <span style="color:#f1fa8c">&#34;statuses_count&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">36</span>,
+    <span style="color:#f1fa8c">&#34;last_status_at&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;2019-11-15T07:14:43.524Z&#34;</span>
+  }
+]
+</code></pre></div><p></div>
+
+<div class="api-method-response-example">
+  <h5>
+    <span class="api-method-response-example-indicator api-method-response-example-indicator-error"></span>
+    401: Unauthorized
+  </h5>
+
+<div>
+</p>
+<p>Invalid or missing Authorization header
+</div>
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
+  <span style="color:#f1fa8c">&#34;error&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;The access token is invalid&#34;</span>
+}
+</code></pre></div><p></div>
+
+</div>
+
+</div>
+
+</div>
+</p>
+<p><div>
   <h2 class="api-method">
     <div class="api-method-method">
       <span>get</span>
@@ -2786,11 +2907,12 @@ The id of the account in the database
 
 <div>
 </p>
-<p>Follow the given account.</p>
+<p>Follow the given account. Can also be used to update whether to show reblogs or enable notifications.</p>
 <p><strong>Returns:</strong> Relationship<br>
 <strong>OAuth:</strong> User token + <code>write:follows</code> or <code>follow</code><br>
 <strong>Version history:</strong><br>
-0.0.0 - added</p>
+0.0.0 - added<br>
+3.3.0 - added <code>notify</code></p>
 <p></div>
 
 <div class="tabs">
@@ -2859,6 +2981,22 @@ Receive this account&rsquo;s reblogs in home timeline? Defaults to true.
   </div>
 </div>
 
+<div class="api-method-parameter">
+  <div class="api-method-parameter-cell api-method-parameter-name">
+    <div>notify</div>
+    <div class="api-method-parameter-optional">optional</div>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-type">
+    <code>boolean</code>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-description">
+
+Receive notifications when this account posts a status? Defaults to false.
+  </div>
+</div>
+
 </div>
 
 </div>
@@ -2881,6 +3019,7 @@ Receive this account&rsquo;s reblogs in home timeline? Defaults to true.
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;3&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -3003,6 +3142,7 @@ Bearer &lt;user token&gt;
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;3&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -3125,6 +3265,7 @@ Bearer &lt;user token&gt;
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;3&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -3247,6 +3388,7 @@ Bearer &lt;user token&gt;
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;3&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -3368,6 +3510,22 @@ Mute notifications in addition to statuses? Defaults to true.
   </div>
 </div>
 
+<div class="api-method-parameter">
+  <div class="api-method-parameter-cell api-method-parameter-name">
+    <div>duration</div>
+    <div class="api-method-parameter-optional">optional</div>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-type">
+    <code>number</code>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-description">
+
+How long the mute should last, in seconds. Defaults to 0 (indefinite).
+  </div>
+</div>
+
 </div>
 
 </div>
@@ -3390,6 +3548,7 @@ Mute notifications in addition to statuses? Defaults to true.
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;3&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -3512,6 +3671,7 @@ Bearer &lt;user token&gt;
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;3&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -3634,6 +3794,7 @@ Bearer &lt;user token&gt;
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;1&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -3802,6 +3963,7 @@ Bearer &lt;user token&gt;
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;1&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -3957,6 +4119,7 @@ The comment to be set on that user. Provide an empty string or leave out this pa
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;1&#34;</span>,
   <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
   <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
+  <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
   <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
   <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -4094,6 +4257,7 @@ Array of account IDs to check
     <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;1&#34;</span>,
     <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
     <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
+    <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
     <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
     <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
     <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -4107,6 +4271,7 @@ Array of account IDs to check
     <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;2&#34;</span>,
     <span style="color:#f1fa8c">&#34;following&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
     <span style="color:#f1fa8c">&#34;showing_reblogs&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+    <span style="color:#f1fa8c">&#34;notifying&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
     <span style="color:#f1fa8c">&#34;followed_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
     <span style="color:#f1fa8c">&#34;blocking&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
     <span style="color:#f1fa8c">&#34;blocked_by&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
@@ -4341,7 +4506,7 @@ Only who the user is following. Defaults to false.
 
 
     <p style="color: #687590;">
-      Last updated July 10, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5caccounts.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5caccounts.md' style="color: #687590;">Improve this page</a>
 
       
     </p>

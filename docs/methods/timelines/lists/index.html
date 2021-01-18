@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -854,10 +850,8 @@
 <p>Fetch all lists that the user owns.</p>
 <p><strong>Returns:</strong> Array of List<br>
 <strong>OAuth:</strong> User token + <code>read:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -905,7 +899,13 @@ Bearer &lt;user token&gt;
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">[
   {
     <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;12249&#34;</span>,
-    <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Friends&#34;</span>
+    <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Friends&#34;</span>,
+    <span style="color:#f1fa8c">&#34;replies_policy&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;followed&#34;</span>
+  },
+  {
+  <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;13585&#34;</span>,
+  <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;test&#34;</span>,
+  <span style="color:#f1fa8c">&#34;replies_policy&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;list&#34;</span>
   }
 ]
 </code></pre></div><p></div>
@@ -947,13 +947,11 @@ Bearer &lt;user token&gt;
 
 <div>
 </p>
-<p>Fetch the list with the given ID. Used for verifying the title of a list.</p>
+<p>Fetch the list with the given ID. Used for verifying the title of a list, and which replies to show within that list.</p>
 <p><strong>Returns:</strong> List<br>
 <strong>OAuth:</strong> User token + <code>read:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1021,7 +1019,8 @@ Bearer &lt;user token&gt;
 </p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;12249&#34;</span>,
-  <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Friends&#34;</span>
+  <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Friends&#34;</span>,
+  <span style="color:#f1fa8c">&#34;replies_policy&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;followed&#34;</span>
 }
 </code></pre></div><p></div>
 
@@ -1081,10 +1080,9 @@ Bearer &lt;user token&gt;
 <p>Create a new list.</p>
 <p><strong>Returns:</strong> List<br>
 <strong>OAuth:</strong> User token + <code>write:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added<br>
+3.3.0 - added <code>replies_policy</code></p>
 <p></div>
 
 <div class="tabs">
@@ -1132,6 +1130,22 @@ The title of the list to be created.
   </div>
 </div>
 
+<div class="api-method-parameter">
+  <div class="api-method-parameter-cell api-method-parameter-name">
+    <div>replies_policy</div>
+    <div class="api-method-parameter-optional">optional</div>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-type">
+    <code>string</code>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-description">
+
+Enumerable oneOf <code>followed</code> <code>list</code> <code>none</code>. Defaults to <code>list</code>.
+  </div>
+</div>
+
 </div>
 
 </div>
@@ -1152,7 +1166,8 @@ The title of the list to be created.
 </p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;13585&#34;</span>,
-  <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;test&#34;</span>
+  <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;test&#34;</span>,
+  <span style="color:#f1fa8c">&#34;replies_policy&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;list&#34;</span>
 }
 </code></pre></div><p></div>
 
@@ -1193,13 +1208,12 @@ The title of the list to be created.
 
 <div>
 </p>
-<p>Change the title of a list.</p>
+<p>Change the title of a list, or which replies to show.</p>
 <p><strong>Returns:</strong> List<br>
 <strong>OAuth:</strong> User token + <code>write:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added<br>
+3.3.0 - added <code>replies_policy</code></p>
 <p></div>
 
 <div class="tabs">
@@ -1255,7 +1269,7 @@ Bearer &lt;user token&gt;
 <div class="api-method-parameter">
   <div class="api-method-parameter-cell api-method-parameter-name">
     <div>title</div>
-    <div class="api-method-parameter-required">required</div>
+    <div class="api-method-parameter-optional">optional</div>
   </div>
 
   <div class="api-method-parameter-cell api-method-parameter-type">
@@ -1265,6 +1279,22 @@ Bearer &lt;user token&gt;
   <div class="api-method-parameter-cell api-method-parameter-description">
 
 The title of the list to be updated.
+  </div>
+</div>
+
+<div class="api-method-parameter">
+  <div class="api-method-parameter-cell api-method-parameter-name">
+    <div>replies_policy</div>
+    <div class="api-method-parameter-optional">optional</div>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-type">
+    <code>string</code>
+  </div>
+
+  <div class="api-method-parameter-cell api-method-parameter-description">
+
+Enumerable oneOf <code>followed</code> <code>list</code> <code>none</code>.
   </div>
 </div>
 
@@ -1288,7 +1318,8 @@ The title of the list to be updated.
 </p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">{
   <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;13585&#34;</span>,
-  <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;testing&#34;</span>
+  <span style="color:#f1fa8c">&#34;title&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;testing&#34;</span>,
+  <span style="color:#f1fa8c">&#34;replies_policy&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;list&#34;</span>
 }
 </code></pre></div><p></div>
 
@@ -1347,10 +1378,8 @@ The title of the list to be updated.
 </p>
 <p><strong>Returns:</strong> empty object<br>
 <strong>OAuth:</strong> User token + <code>write:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1475,10 +1504,8 @@ Bearer &lt;user token&gt;
 </p>
 <p><strong>Returns:</strong> Array of Account<br>
 <strong>OAuth:</strong> User token + <code>read:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1676,10 +1703,8 @@ Maximum number of results. Defaults to 40. Max 40. Set to 0 in order to get all 
 <p>Add accounts to the given list. Note that the user must be following these accounts.</p>
 <p><strong>Returns:</strong> empty object<br>
 <strong>OAuth:</strong> User token + <code>write:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1839,10 +1864,8 @@ Array of account IDs to add to the list.
 <p>Remove accounts from the given list.</p>
 <p><strong>Returns:</strong> empty object<br>
 <strong>OAuth:</strong> User token + <code>write:lists</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.1.0 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.1.0 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1973,7 +1996,7 @@ Array of account IDs to remove from the list.
 
 
     <p style="color: #687590;">
-      Last updated January 1, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5ctimelines%5clists.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5ctimelines%5clists.md' style="color: #687590;">Improve this page</a>
 
       
     </p>

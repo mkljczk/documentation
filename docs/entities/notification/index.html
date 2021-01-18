@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -903,14 +899,17 @@
 <p><strong>Description:</strong> The type of event that resulted in the notification.<br>
 <strong>Type:</strong> String (Enumerable oneOf)<br>
 <code>follow</code> = Someone followed you<br>
+<code>follow_request</code> = Someone requested to follow you<br>
 <code>mention</code> = Someone mentioned you in their status<br>
 <code>reblog</code> = Someone boosted one of your statuses<br>
 <code>favourite</code> = Someone favourited one of your statuses<br>
 <code>poll</code> = A poll you have voted in or created has ended<br>
+<code>status</code> = Someone you enabled notifications for has posted a status<br>
 <strong>Version history:</strong><br>
 0.9.9 - added<br>
 2.8.0 - added <code>poll</code><br>
-3.1.0 - added <code>follow_request</code></p>
+3.1.0 - added <code>follow_request</code><br>
+3.3.0 - added <code>status</code></p>
 <h3 id="created_at"><code>created_at</code></h3>
 <p><strong>Description:</strong> The timestamp of the notification.<br>
 <strong>Type:</strong> String (ISO 8601 Datetime)<br>
@@ -948,7 +947,7 @@
 
 
     <p style="color: #687590;">
-      Last updated August 10, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/entities%5cnotification.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/entities%5cnotification.md' style="color: #687590;">Improve this page</a>
 
       
     </p>

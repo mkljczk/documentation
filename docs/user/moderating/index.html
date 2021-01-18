@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -841,7 +837,7 @@
     <h2 id="filters">Filtering posts</h2>
 <p>It is possible to filter statuses for specific keywords and phrases so that they can be hidden automatically.</p>
 <figure>
-    <img src="/assets/image%20%2848%29.png"
+    <img src="/assets/filter-list.jpg"
          alt="A sample of active filters for various keywords in different contexts."/> <figcaption>
             <p>A sample of active filters for various keywords in different contexts.</p>
         </figcaption>
@@ -849,7 +845,7 @@
 
 <p>To create or manage your filters, go to Settings &gt; Filters. The &ldquo;Add new filter&rdquo; button will let you create a new filter, and existing filters can be edited or deleted. Your existing filters will be summarized in a table.</p>
 <figure>
-    <img src="/assets/image%20%2814%29.png"
+    <img src="/assets/filter-edit.jpg"
          alt="Filters can have an expiry date, specific contexts, server-side drop, and use word boundaries."/> <figcaption>
             <p>Filters can have an expiry date, specific contexts, server-side drop, and use word boundaries.</p>
         </figcaption>
@@ -874,9 +870,9 @@
 <p>Filters normally apply to any status that contains the included characters, regardless of whether they are in the middle of a word. Enabling &ldquo;whole word&rdquo; will only apply the filter if the keyword is surrounded by spaces or other non-alphanumeric characters.</p>
 <h2 id="blocking-and-muting">User-level actions</h2>
 <figure>
-    <img src="/assets/image%20%2824%29.png"
-         alt="The user dropdown menu offers various actions."/> <figcaption>
-            <p>The user dropdown menu offers various actions.</p>
+    <img src="/assets/profile-dropdown.jpg"
+         alt="The profile dropdown menu offers various actions."/> <figcaption>
+            <p>The profile dropdown menu offers various actions.</p>
         </figcaption>
 </figure>
 
@@ -884,7 +880,7 @@
 <p>If you hide boosts from someone, you won’t see their boosts in your home feed. This option only appears on users who you are currently following.</p>
 <h3 id="mute">Muting</h3>
 <figure>
-    <img src="/assets/image%20%2852%29.png"
+    <img src="/assets/muted.jpg"
          alt="Sample of muted accounts."/> <figcaption>
             <p>Sample of muted accounts.</p>
         </figcaption>
@@ -898,10 +894,11 @@
 <li>You won’t see the user in public timelines</li>
 </ul>
 <p>If you choose to also mute notifications from them, you will additionally not see notifications from that user.</p>
+<p>Mutes can also have an optional duration, after which they will expire.</p>
 <p>The user has no way of knowing they have been muted.</p>
 <h3 id="block">Blocking</h3>
 <figure>
-    <img src="/assets/image%20%2836%29.png"
+    <img src="/assets/blocked.jpg"
          alt="Sample of blocked accounts."/> <figcaption>
             <p>Sample of blocked accounts.</p>
         </figcaption>
@@ -923,9 +920,9 @@
 <li>The user won’t see you in public timelines</li>
 </ul>
 <p>If you and the blocked user are on the same server, the blocked user will not be able to view your posts on your profile while logged in.</p>
-<h3 id="hide-domain">Hiding an entire server</h3>
-<p><img src="/assets/image%20%2861%29.png" alt=""></p>
-<p>If you hide an entire server:</p>
+<h3 id="block-domain">Hiding an entire server</h3>
+<p><img src="/assets/block-domain.jpg" alt=""></p>
+<p>If you block an entire server:</p>
 <ul>
 <li>You will not see posts from that server on the public timelines</li>
 <li>You won’t see other people’s boosts of that server in your home feed</li>
@@ -934,7 +931,7 @@
 </ul>
 <h2 id="report">Reporting problematic content to moderators</h2>
 <figure>
-    <img src="/assets/image%20%283%29.png"
+    <img src="/assets/report-modal.jpg"
          alt="The report modal allows selecting example statuses, adding a note, and forwarding reports."/> <figcaption>
             <p>The report modal allows selecting example statuses, adding a note, and forwarding reports.</p>
         </figcaption>
@@ -944,7 +941,7 @@
 
 
     <p style="color: #687590;">
-      Last updated November 26, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/user%5cmoderating.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/user%5cmoderating.md' style="color: #687590;">Improve this page</a>
 
       
         <br />

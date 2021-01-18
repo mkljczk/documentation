@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -847,11 +843,21 @@
 <h3 id="id"><code>id</code></h3>
 <p><strong>Description:</strong> The internal database ID of the list.<br>
 <strong>Type:</strong> String (cast from an integer, but not guaranteed to be a number)<br>
-<strong>Version history:</strong> Added in 2.1.0</p>
+<strong>Version history:</strong><br>
+2.1.0 - added</p>
 <h3 id="title"><code>title</code></h3>
 <p><strong>Description:</strong> The user-defined title of the list.<br>
 <strong>Type:</strong> String<br>
-<strong>Version history:</strong> Added in 2.1.0</p>
+<strong>Version history:</strong><br>
+2.1.0 - added</p>
+<h3 id="replies_policy"><code>replies_policy</code></h3>
+<p><strong>Description:</strong> The user-defined title of the list.<br>
+<strong>Type:</strong> String (Enumerable oneOf)<br>
+<code>followed</code> = Show replies to any followed user<br>
+<code>list</code> = Show replies to members of the list<br>
+<code>none</code> = Show replies to no one<br>
+<strong>Version history:</strong><br>
+3.3.0 - added</p>
 <h2 id="see-also">See also</h2>
 <a href="http://docs.joinmastodon.org/methods/timelines/lists/" class="page-ref">
   <div class="page-ref-icon"><i class="fa fa-arrow-right"></i></div>
@@ -865,7 +871,7 @@
 
 
     <p style="color: #687590;">
-      Last updated January 12, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/entities%5clist.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/entities%5clist.md' style="color: #687590;">Improve this page</a>
 
       
     </p>

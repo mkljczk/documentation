@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -836,6 +832,7 @@
         <li><a href="#email-domain-blocks">Email domain blocks CLI</a></li>
         <li><a href="#emoji">Emoji CLI</a></li>
         <li><a href="#feeds">Feeds CLI</a></li>
+        <li><a href="#maintenance">Maintenance CLI</a></li>
         <li><a href="#media">Media CLI</a></li>
         <li><a href="#preview_cards">Preview Cards CLI</a></li>
         <li><a href="#search">Search CLI</a></li>
@@ -1078,7 +1075,7 @@
 <tbody>
 <tr>
 <td style="text-align:left"><code>USERNAME</code></td>
-<td style="text-align:left">Username for the remote accout.</td>
+<td style="text-align:left">username@domain for the remote account.</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>--all</code></td>
@@ -1099,6 +1096,32 @@
 <tr>
 <td style="text-align:left"><code>--dry-run</code></td>
 <td style="text-align:left">Print expected results only, without performing any actions.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accounts-merge"><code>tootctl accounts merge</code></h3>
+<p>Merge two remote accounts into one. This is primarily meant to fix duplicates caused by other servers changing their domain. By default, this only works if the public key is the same, but this can be overridden.</p>
+<p><strong>Version history:</strong><br>
+3.3.0 - added</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Option</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>FROM</code></td>
+<td style="text-align:left">username@domain for the remote account to be removed.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>TO</code></td>
+<td style="text-align:left">username@domain for the remote account to be kept.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>--force</code></td>
+<td style="text-align:left">Override the public key check.</td>
 </tr>
 </tbody>
 </table>
@@ -1501,6 +1524,14 @@
 <p>Remove all home and list feeds from Redis.</p>
 <p><strong>Version history:</strong><br>
 2.6.0 - added</p>
+<h2 id="maintenance">Maintenance CLI</h2>
+<a href="https://github.com/tootsuite/mastodon/blob/master/lib/mastodon/maintenance_cli.rb" class="page-ref">
+  <div class="page-ref-icon"><i class="fa fa-external-link-square-alt"></i></div>
+  lib/mastodon/maintenance_cli.rb
+</a>
+
+<h3 id="maintenance-fix-duplicates"><code>tootctl maintenance fix-duplicates</code></h3>
+<p>Fix corrupted database indexes that may have been caused due to changing collation rules. Deletes or merges duplicate accounts, statuses, emojis, etc. Mastodon has to be stopped to run this task, which will take a long time and may be destructive. This is useful if your database indexes are corrupted because of issues such as <a href="https://wiki.postgresql.org/wiki/Locale_data_changes">https://wiki.postgresql.org/wiki/Locale_data_changes</a>.</p>
 <h2 id="media">Media CLI</h2>
 <a href="https://github.com/tootsuite/mastodon/blob/master/lib/mastodon/media_cli.rb" class="page-ref">
   <div class="page-ref-icon"><i class="fa fa-external-link-square-alt"></i></div>
@@ -1542,7 +1573,8 @@
 <p>Scans for files that do not belong to existing media attachments, and remove them. Please mind that some storage providers charge for the necessary API requests to list objects. Also, this operation requires iterating over every single file individually, so it will be slow.</p>
 <p><strong>Version history:</strong><br>
 3.1.0 - added<br>
-3.1.3 - added <code>--prefix</code></p>
+3.1.3 - added <code>--prefix</code><br>
+3.3.0 - added <code>--fix-permissions</code></p>
 <table>
 <thead>
 <tr>
@@ -1562,6 +1594,10 @@
 <tr>
 <td style="text-align:left"><code>--prefix</code></td>
 <td style="text-align:left">Traverse only a specific prefix of files in the system.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>--fix-permissions</code></td>
+<td style="text-align:left">Sets S3 ACL to be default according to environment variables.</td>
 </tr>
 </tbody>
 </table>
@@ -1756,7 +1792,7 @@
 
 
     <p style="color: #687590;">
-      Last updated September 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/admin%5ctootctl.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/admin%5ctootctl.md' style="color: #687590;">Improve this page</a>
 
       
         <br />

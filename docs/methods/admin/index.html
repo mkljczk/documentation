@@ -222,6 +222,14 @@
               <a href="/admin/troubleshooting/" class="">Troubleshooting errors</a>
 
               
+                <ul class="sub-menu">
+                  
+                    <li>
+                      <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
+                    </li>
+                  
+                </ul>
+              
             </li>
           
         </ul>
@@ -352,6 +360,12 @@
           
             <li>
               <a href="/spec/oauth/" class="">OAuth</a>
+
+              
+            </li>
+          
+            <li>
+              <a href="/spec/bearcaps/" class="">Bearcaps</a>
 
               
             </li>
@@ -798,24 +812,6 @@
       
     </li>
   
-    <li>
-      
-        <span class="sub-title">admin-troubleshooting</span>
-      
-
-      
-        <ul class="sub-menu">
-          
-            <li>
-              <a href="/admin/troubleshooting/index-corruption/" class="">Database index corruption</a>
-
-              
-            </li>
-          
-        </ul>
-      
-    </li>
-  
 </ul>
 </nav>
     <main>
@@ -862,10 +858,8 @@
 <p>View accounts matching certain criteria for filtering, up to 100 at a time. Pagination may be done with the HTTP Link header in the response.</p>
 <p><strong>Returns:</strong> Admin::Account<br>
 <strong>OAuth:</strong> User token + <code>admin:read:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1149,10 +1143,8 @@ Filter for staff accounts?
 <p>View admin-level information about the given account.</p>
 <p><strong>Returns:</strong> Admin::Account<br>
 <strong>OAuth:</strong> User token + <code>admin:read:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1244,10 +1236,8 @@ Bearer &lt;user token&gt;
 <p>Perform an action against an account and log this action in the moderation history.</p>
 <p><strong>Returns:</strong> empty object<br>
 <strong>OAuth:</strong> User token + <code>admin:write:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1424,10 +1414,8 @@ Whether an email should be sent to the user with the above information.
 <p>Approve the given local account if it is currently pending approval.</p>
 <p><strong>Returns:</strong> Admin::Account<br>
 <strong>OAuth:</strong> User token + <code>admin:write:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1519,10 +1507,8 @@ Bearer &lt;user token&gt;
 <p>Reject the given local account if it is currently pending approval.</p>
 <p><strong>Returns:</strong> Admin::Account<br>
 <strong>OAuth:</strong> User token + <code>admin:write:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1614,10 +1600,8 @@ Bearer &lt;user token&gt;
 <p>Re-enable a local account whose login is currently disabled.</p>
 <p><strong>Returns:</strong> Admin::Account<br>
 <strong>OAuth:</strong> User token + <code>admin:write:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1709,10 +1693,8 @@ Bearer &lt;user token&gt;
 <p>Unsilence a currently silenced account.</p>
 <p><strong>Returns:</strong> Admin::Account<br>
 <strong>OAuth:</strong> User token + <code>admin:write:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1804,10 +1786,8 @@ Bearer &lt;user token&gt;
 <p>Unsuspend a currently suspended account.</p>
 <p><strong>Returns:</strong> Admin::Account<br>
 <strong>OAuth:</strong> User token + <code>admin:write:accounts</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -1900,10 +1880,8 @@ Bearer &lt;user token&gt;
 <p>View all reports. Pagination may be done with HTTP Link header in the response.</p>
 <p><strong>Returns:</strong> Array of Admin::Report<br>
 <strong>OAuth:</strong> User token + <code>admin:read:reports</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2024,10 +2002,8 @@ Bearer &lt;user token&gt;
 <p>View information about the report with the given ID.</p>
 <p><strong>Returns:</strong> Admin::Report<br>
 <strong>OAuth:</strong> User token + <code>admin:read:reports</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2119,10 +2095,8 @@ Bearer &lt;user token&gt;
 <p>Claim the handling of this report to yourself.</p>
 <p><strong>Returns:</strong> Admin::Report<br>
 <strong>OAuth:</strong> User token + <code>admin:write:reports</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2214,10 +2188,8 @@ Bearer &lt;user token&gt;
 <p>Unassign a report so that someone else can claim it.</p>
 <p><strong>Returns:</strong> Admin::Report<br>
 <strong>OAuth:</strong> User token + <code>admin:write:reports</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2309,10 +2281,8 @@ Bearer &lt;user token&gt;
 <p>Mark a report as resolved with no further action taken.</p>
 <p><strong>Returns:</strong> Admin::Report<br>
 <strong>OAuth:</strong> User token + <code>admin:write:reports</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2404,10 +2374,8 @@ Bearer &lt;user token&gt;
 <p>Reopen a currently closed report.</p>
 <p><strong>Returns:</strong> Admin::Report<br>
 <strong>OAuth:</strong> User token + <code>admin:write:reports</code><br>
-<strong>Version history:</strong></p>
-<ul>
-<li>2.9.1 - added</li>
-</ul>
+<strong>Version history:</strong><br>
+2.9.1 - added</p>
 <p></div>
 
 <div class="tabs">
@@ -2484,7 +2452,7 @@ Bearer &lt;user token&gt;
 
 
     <p style="color: #687590;">
-      Last updated January 1, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5cadmin.md' style="color: #687590;">Improve this page</a>
+      Last updated December 27, 2020 · <a href='https://github.com/tootsuite/documentation/tree/master/content/en/methods%5cadmin.md' style="color: #687590;">Improve this page</a>
 
       
     </p>
