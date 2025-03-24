@@ -56,6 +56,7 @@ menu:
 
 * [masto.js](https://github.com/neet/masto.js)
 * [libodonjs](https://github.com/Zatnosk/libodonjs)
+* [pl-api](https://codeberg.org/mkljczk/pl-fe/src/branch/develop/packages/pl-api)
 
 ## JavaScript \(Browser\) {#javascript-browser}
 
